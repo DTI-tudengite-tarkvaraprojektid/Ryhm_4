@@ -1,148 +1,210 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tantsumeka</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tantsumeka</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
-	<!--Menüü-->
-    <nav class="navbar navbar-dark navbar-expand-xl fixed-top clean-navbar menu">
-        <div class="container-fluid"><a class="navbar-brand logo" href="#" style="background-image:url(&quot;assets/img/tantsumeka_hele.png&quot;);"></a>
-            <button
-                class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse menu-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation" style="padding-right:31px;">
-                        	<a class="nav-link active menu-link" href="#">KURSUSED</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        	<a class="nav-link menu-link active" href="#">HOBITANTS</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        	<a class="nav-link menu-link active" href="#">Võistlustants</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        	<a class="nav-link menu-link active" href="#">eratunnid</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        	<a class="nav-link menu-link active" href="#">eratunnid</a>
-                        </li>
-                        <li class="nav-item" role="presentation" style="padding-right:0px;">
-                        	<a class="nav-link menu-link active" href="#">TANTSUTARBED</a>
-                        </li>   
-                    </ul>
-                </div>
-        </div>
-    </nav>
-    <main class="page landing-page">
-    	<!--Video-->
-        <section id="video" class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(255,239,143,0.48);">
-            <div class="text">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-            </div>
-        </section>
-		
-		<!--Tutvustus-->
-        <section id="info" class="clean-block clean-info dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2>Info</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <h3>Lorem impsum dolor sit amet</h3>
-                        <div class="getting-started-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Lorem impsum dolor sit amet</h3>
-                        <div class="getting-started-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Tantsustiilid-->
-        <section id="tantsud" class="clean-block clean-info dark">
-            <div class="container">
-                <h2 class="text-center">Tantsututvustused</h2>
-                <div>
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">aeglane valss</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">tango</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">fokstrott</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-4">quickstepp</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-5">samba</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-6">rumba</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-7">rock</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">aeglane valss</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">tango</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">fokstrott</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-4">quickstepp</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-5">samba</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-6">rumba</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-7">rock</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane" role="tabpanel" id="tab-1">
-                            <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
-                        </div>
-                        <div class="tab-pane active" role="tabpanel" id="tab-2">
-                            <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="tab-3">
-                            <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="tab-4">
-                            <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="tab-5">
-                            <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="tab-6">
-                            <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="tab-7">
-                            <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-		
-		<!--  !!! -->
-        
-    </main>
-    <!--Footer-->
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col item social">
-                        <p class="copyright">TANTSUMEKA: Rocca Al Mare Kool, Vabaõhumuuseumi tee 8, 13521 Tallinn; telefon 5919 0800; e-post info@tantsumeka.ee&nbsp;</p><br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-</body>
+<!-- Navigation -->
+<header id="topofpage">
+<nav class="navbar navbar-expand-lg navbar-light bg-logo fixed-top">
+<div class="container">
+	<a class="navbar-brand logo" href="#tutvustus" target="_self" style="background-image:url(&quot;assets/img/tantsumeka_hele.png&quot;);"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">KURSUSED</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#algkursus" target="_self">Algkursus</a>
+			      <a class="dropdown-item" href="#" target="_self">Jätkukursus</a>
+			      <a class="dropdown-item" href="#" target="_self">Edasijõudnute kursus</a>
+			      <a class="dropdown-item" href="#" target="_self">Kalender</a>
+			      <a class="dropdown-item" href="#" target="_self">Registreerimine</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">HOBITANTS</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#" target="_self">Hobiklubi</a>
+			      <a class="dropdown-item" href="#" target="_self">Kalender</a>
+			      <a class="dropdown-item" href="#" target="_self">Registreerimine</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">VÕISTLUSTANTS</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#" target="_self">Võistlusttants täiskasvanutele</a>
+			      <a class="dropdown-item" href="#" target="_self">Kalender</a>
+			      <a class="dropdown-item" href="#" target="_self">Registreerimine</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">ERATUNNID</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#" target="_self">Pulmatants</a>
+			      <a class="dropdown-item" href="#" target="_self">Seltskonnatants</a>
+			      <a class="dropdown-item" href="#" target="_self">Võistlustants</a>
+			      <a class="dropdown-item" href="#" target="_self">Kalender</a>
+			      <a class="dropdown-item" href="#" target="_self">Registreerimine</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">TANTSUTARBED</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#" target="_self">Tantsukingad</a>
+			      <a class="dropdown-item" href="#" target="_self">Tantsurõivad</a>
+			    </div>
+			</li>
+			<li class="nav-item dropdown">
+			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">LISAKS</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#" target="_self">Galerii</a>
+			      <a class="dropdown-item" href="#" target="_self">Kontakt</a>
+			      <a class="dropdown-item" href="#" target="_self">Something else here</a>
+			    </div>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+</header>
+<main>
+<section id="tutvustus">
+<div class="video-header wrap">
+	<div class="fullscreen-video-wrap active">
+		<video autoplay muted loop id="myVideo">
+			<source src="assets/video/video2.mp4" type="video/mp4">
+		</video>
+	</div>
+</div>
 
+<!--- Tantsumeka -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">Tantsumeka</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p class="lead">Tants aitab elust rõõmu tunda!</p>
+	</div>
+</div>
+</div>
+
+<!--Tutvustus põhjalik-->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-lg-6 about-1">
+		<h3>Ajalugu</h3>
+		<p>Seltskonna- ja võistlustantsukeskus Tantsumeka on loodud 2011. aastal ja välja kasvanud Ants Taela legendaarsest Taela Tantsukoolist, mis tegutses 1965-2011 Mustpeade Majas.</p>
+	</div>
+	<div class="col-lg-6 about-2">
+		<h3>Eesmärk</h3>
+		<p>Tantsumeka eesmärgiks on olla sõltumatu tantsukeskus Eestis ning teha tantsualast koostööd rahvusvahelisel tasemel. Tantsumeka on avatud kõikidele tantsuhuvilistele, nii algajatele, edasijõudnutele kui ka professionaalsetele tantsijatele, arendamaks oma tantsualaseid oskusi.</p>
+	</div>
+</div>
+</div>
+<!--Tantsustiilid-->
+<section id="tantsud" class="clean-block clean-info dark">
+    <div class="container tabl-heading">
+        <h2 class="text-center">Tantsututvustused</h2>
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Aeglane valss</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Tango</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Viini valss</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-4">Fokstrott</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-5">Quickstep</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-6">Samba</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-7">Tša-tša-tša</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-8">Rumba</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-9">Dšaiv</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-10">Bossanova</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-11">Bugg</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-12">Night club two step</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-13">Blues</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-14">Rock</a></li>
+                <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-15">Salsa</a></li>
+            </ul>
+                <div class="tab-content">
+                <div class="tab-pane" role="tabpanel" id="tab-1">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane active" role="tabpanel" id="tab-2">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-3">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-4">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-5">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-6">
+                	<p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-7">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-8">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-9">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-10">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-11">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-12">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-13">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-14">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-15">
+                    <p id="tabp"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br><br></p>
+                </div>
+            </div>
+        </div>
+ 	</div>
+</section>
+</section>
+</main>
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-12">
+		<div class="footer-box">
+			<h5 class="social-info">Rocca Al Mare Kool, Vabaõhumuuseumi tee 8, 13521 Tallinn; telefon 5919 0800; e-post info@tantsumeka.ee&nbsp;</h5>
+			<a href="#" class="social" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="#" class="social" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="social" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="#" class="social" target="_blank"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</div>
+</div>
+</footer>
+
+</body>
 </html>
