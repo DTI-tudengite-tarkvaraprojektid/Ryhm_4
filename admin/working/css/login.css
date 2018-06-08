@@ -6,16 +6,8 @@ form{
     background-color: white;
 }
 .btn-primary {
-    background-color: #ffef8f !important;
-}
-.btn-primary:hover {
-    background-color: #ffef8f !important;
-}
-.btn{
-	background-color: #ffef8f !important;
-}
-.btn-block{
-	background-color: #ffef8f !important;
+    background-color: black !important;
+	
 }
 .form-container{
     border-radius: 10px;

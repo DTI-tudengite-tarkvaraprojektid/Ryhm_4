@@ -11,3 +11,7 @@ https://drive.google.com/drive/folders/1aWAGXfPLTY3gsUiKMozIFWzy2_NV60bj
 
 test
 >>>>>>> 8b885a0e9670a86a36d2e913929681f3806d2022
+
+------------------------------------------------
+admin login 
+http://greeny.cs.tlu.ee/~sevtrobe/Tantsumeka/beta/admin/working/login.php
