@@ -4,23 +4,18 @@
         <title>Calendar Beta</title>
         <link rel="stylesheet" type="text/css" href="css/calendar.css">
         <script src="js/calendar.js"></script>
+
     </head>
     <body>
         <div class="calendar">       
             <div class="wrapper">
                 <main>
                     <div class="toolbar">
-                        <div class="toggle">
-                            <div class="toggle__option" href="#" onclick="showWeek()">week</div>
-                            <div class="toggle__option toggle__option--selected" href="#" onclick="showMonth()">month</div>
-                            
-                        </div>
-                        <div class="current-month">June 2016</div>
-                        <div class="search-input">
-                            <i class="fa fa-search"></i>
-                        </div>
+                        
+                        
+                        
                     </div>
-                    <div class="calendar_current" id="month">
+                    <!--<div class="calendar_current" id="month">
                         <div class="calendar__header">
                             <div>mon</div>
                             <div>tue</div>
@@ -76,10 +71,13 @@
                             <div class="calendar__day day">4</div>
                         </div>
 
-                    </div>
-                    <div id = "calendar">
-                        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
-                        </iframe>
+                    </div>-->
+
+                   
+                    <div class="googleCalendar">
+                        
+                        <iframe src="gcalendar-wrapper.php?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+
                     </div>
 
                     

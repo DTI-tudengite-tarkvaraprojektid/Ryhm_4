@@ -10,3 +10,4 @@ function showMonth(){
     month.style.display = "block"; 
     //week.style.display = "none"; 
 }
+
