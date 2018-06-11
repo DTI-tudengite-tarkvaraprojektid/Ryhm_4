@@ -1,5 +1,6 @@
 <?php
-$products = get_products();
+$cat = $_GET['id'];
+$products = get_cat_products($cat);
 
 foreach($products as $item){?>
 
