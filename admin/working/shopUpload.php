@@ -10,7 +10,7 @@
 	if(isset($_POST['but_upload'])){
 	
 		$name = $_FILES['file']['name'];
-		$target_dir = "upload/";
+		$target_dir = "shop/upload/";
 		$target_file = $target_dir . basename($_FILES["file"]["name"]);
 
 		// Select file type
