@@ -1,5 +1,11 @@
 <?php
 	include("config.php");
+	$dbname = "if17_Tantsumeka"; /* Database name */
+	$con = mysqli_connect($serverHost, $serverUsername, $serverPassword,$dbname);
+	// Check connection
+	if (!$con) {
+		die("Connection failed: " . mysqli_connect_error());
+	}
 
 	if(isset($_POST['but_upload'])){
 	
@@ -19,7 +25,7 @@
 			$image_base64 = base64_encode(file_get_contents($_FILES['file']['tmp_name']) );
 			$image = 'data:image/'.$imageFileType.';base64,'.$image_base64;
 			// Insert record
-			$query = "insert into images(image) values('".$image."')";
+			$query = "insert into products(image) values('".$image."')";
 			mysqli_query($con,$query);
 			
 			// Upload file
