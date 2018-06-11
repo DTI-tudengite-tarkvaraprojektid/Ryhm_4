@@ -2,7 +2,7 @@
   require("functions.php");
   //kui on juba sisseloginud
   if(isset($_SESSION["userId"])){
-		header("Location: calendar.php");
+		header("Location: index.php");
 		exit();
   }
   ///////////////////////////////

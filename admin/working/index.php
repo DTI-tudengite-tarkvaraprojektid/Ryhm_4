@@ -69,7 +69,7 @@ $database = "if17_Tantsumeka";
     <body>
         <div class="sidenav">
             <a href="#" onclick="ShowShop()">Pood</a>
-            <a href="#" onclick="ShowCalender()">calender</a>
+            <a href="#" onclick="ShowCalendar()">calender</a>
             <a href="#" onclick="ShowChangeInfo()">Muuda info</a>
         </div>
         <div class="main" id="shop" style="display: block; " >

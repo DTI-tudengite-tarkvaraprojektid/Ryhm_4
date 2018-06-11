@@ -1,7 +1,7 @@
 //GLOBAL VARIABLES
-const shop = document.getElementById("shop");
-const calendar = document.getElementById("calendar");
-const infoChanger = document.getElementById("info");
+var shop = document.getElementById("shop");
+var calendar = document.getElementById("calendar");
+var infoChanger = document.getElementById("info");
 
 //SHOW HIDE FUNCTIONS
 function ShowShop(){
