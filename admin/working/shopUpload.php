@@ -57,7 +57,15 @@
 				<input placeholder="kirjeldus" name="description" type="text" required="">
 				<input placeholder="hind" name="price" type="text" required="">
 				<input placeholder="kategooria" name="category" type="text" required="">
-				<input placeholder="konks" name="heel" type="text" required="">
+				<select name="heel">
+					<option value="5cm peenkonts">5cm peenkonts</option>
+					<option value="7cm peenkonts">7cm peenkonts</option>
+					<option value="8cm peenkonts">8cm peenkonts</option>
+					<option value="5cm alt laienev konst">5cm alt laienev konst</option>
+					<option value="7cm alt laienev konst">7cm alt laienev konst</option>
+					<option value="8cm alt laienev konst">8cm alt laienev konst</option>
+					<option value="audi">Audi</option>
+				</select>
  				<input type='file' name='file' />
   				<input type='submit' value='Save' name='but_upload'>
 			</form>
