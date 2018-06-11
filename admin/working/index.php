@@ -63,24 +63,23 @@ $database = "if17_Tantsumeka";
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/admin.css"
+        <link rel="stylesheet" href="css/admin.css">
+        <script src="js/admin.js"></script>
     </head>
     <body>
         <div class="sidenav">
-            <a href="#">Pood</a>
-            <a href="#">Services</a>
-            <a href="#clients">Clients</a>
-            <a href="#contact">Contact</a>
+            <a href="#" onclick="ShowShop()">Pood</a>
+            <a href="#" onclick="ShowCalender()">calender</a>
+            <a href="#" onclick="ShowChangeInfo()">Muuda info</a>
         </div>
-        <div class="main" id="shop">
+        <div class="main" id="shop" style="display: block; " >
             <div id="upload"> 
                 <h2>Uploader</h2>
                 <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype='multipart/form-data'>
                     <input placeholder="nimetus" name="name" type="text" required="">
                     <input placeholder="kirjeldus" name="description" type="text" required="">
                     <input placeholder="hind" name="price" type="text" required="">
-                    <input placeholder="kategooria" name="category" type="text" required="">
-                    <select name="kategooria">
+                    <select name="category">
                         <option value="m_s">Meeste standardtants </option>
                         <option value="m_l">Meeste Ladina</option>
                         <option value="m_s">Meeste standardtants </option>
@@ -110,7 +109,12 @@ $database = "if17_Tantsumeka";
                 </form>
             </div>
         </div>
-        <div class="main" id="calender"></div>
+        <div class="main" id="calendar" style="display: none; " >
+            <h1>calender</h1>
+        </div>
+        <div class="main" id="info" style="display: none; " >
+            <h1>info</h1>
+        </div>
         
     </body>
 </html> 
