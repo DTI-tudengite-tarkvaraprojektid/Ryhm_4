@@ -74,12 +74,29 @@ $database = "if17_Tantsumeka";
         </div>
         <div class="main" id="shop">
             <div id="upload"> 
-                <h1>Uploader</h1>
+                <h2>Uploader</h2>
                 <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype='multipart/form-data'>
                     <input placeholder="nimetus" name="name" type="text" required="">
                     <input placeholder="kirjeldus" name="description" type="text" required="">
                     <input placeholder="hind" name="price" type="text" required="">
                     <input placeholder="kategooria" name="category" type="text" required="">
+                    <select name="kategooria">
+                        <option value="m_s">Meeste standardtants </option>
+                        <option value="m_l">Meeste Ladina</option>
+                        <option value="m_s">Meeste standardtants </option>
+                        <option value="m_l">Meeste ladina</option>
+                        <option value="m_h">Meeste harrastustants</option>
+                        <option value="m_a">Meeste argentiina tango</option>
+                        <option value="m_t">Meeste treeninguks</option>
+                        <option value="m_p">Meeste pidulikud</option>
+                        <option value="n_s">Naise standardtants </option>
+                        <option value="n_l">Naise ladina</option>
+                        <option value="n_h">Naise harrastustants</option>
+                        <option value="n_a">Naise argentiina tango</option>
+                        <option value="n_t">Naise treeninguks</option>
+                        <option value="n_p">Naise pidulikud</option>
+                        <option value="l">Lastele</option>
+                    </select>
                     <select name="heel">
                         <option value="5cm peenkonts">5cm peenkonts</option>
                         <option value="7cm peenkonts">7cm peenkonts</option>
@@ -87,13 +104,13 @@ $database = "if17_Tantsumeka";
                         <option value="5cm alt laienev konst">5cm alt laienev konst</option>
                         <option value="7cm alt laienev konst">7cm alt laienev konst</option>
                         <option value="8cm alt laienev konst">8cm alt laienev konst</option>
-                        <option value="audi">Audi</option>
                     </select>
                     <input type='file' name='file' />
                     <input type='submit' value='Save' name='but_upload'>
                 </form>
             </div>
         </div>
+        <div class="main" id="calender"></div>
         
     </body>
 </html> 
