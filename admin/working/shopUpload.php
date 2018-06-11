@@ -29,7 +29,7 @@
 				move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name);
 			}	
 		
-			$stmt = $mysqli->prepare("INSERT INTO  products (name, description, price, category, heel, img) VALUES (?,?,?,?,?,'$name')");
+			$stmt = $mysqli->prepare("INSERT INTO  products (name, description, price, category, heel, image) VALUES (?,?,?,?,?,'$name')");
 			echo $mysqli->error;
 			$stmt->bind_param("sssss", $_POST["name"],$_POST["description"], $_POST["price"],$_POST["category"],$_POST["heel"]);
 			$stmt->execute();
