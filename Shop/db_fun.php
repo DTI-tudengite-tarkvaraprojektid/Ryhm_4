@@ -23,18 +23,40 @@
 	
 	function get_products()
 	{
-		$query = "SELECT * FROM products ORDER BY id DESC";
+		$count_prod = mysqli_query(db_connect(),"SELECT COUNT(*) FROM products");
+		$row1 = mysqli_fetch_array($count_prod);
+		$count_post = $row1[0];
+
+		$query = "SELECT * FROM products ORDER BY id DESC LIMIT 1";
+		
+		if(isset($_GET['page']))
+		{
+			$page = (int)$_GET['page'];
+			$query = "SELECT * FROM products ORDER BY id DESC LIMIT $page,1";
+		}
+		
 		$result = mysqli_query(db_connect(),$query);
 		$result = db_result_to_array($result);
-		return $result;
+		return array($result, $count_post);
 	}
 	
 	function get_cat_products($cat)
 	{
-		$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC";
+		$count_prod = mysqli_query(db_connect(),"SELECT COUNT(*) FROM products  WHERE category='$cat'");
+		$row1 = mysqli_fetch_array($count_prod);
+		$count_post = $row1[0];
+		
+		$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT 1";
+		
+		if(isset($_GET['page']))
+		{
+			$page = (int)$_GET['page'];
+			$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT $page,1";
+		}
+		
 		$result = mysqli_query(db_connect(),$query);
 		$result = db_result_to_array($result);
-		return $result;
+		return array($result, $count_post);
 	}
 	
 	function get_cat()
@@ -46,7 +68,7 @@
 	}
 	
 	function get_product($id)
-	{
+	{	
 		$query = "SELECT * FROM products WHERE id='$id' ";
 		$result = mysqli_query(db_connect(),$query);
 		$row = mysqli_fetch_array($result);

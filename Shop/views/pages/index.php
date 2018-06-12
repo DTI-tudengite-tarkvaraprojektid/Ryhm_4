@@ -1,10 +1,10 @@
 <?php
-$products = get_products();
+$products = get_products()[0];
 
 foreach($products as $item){?>
 
 
-<table align="center" cellpadding="0" cellspacing="0" class="product" border="0">
+<table align="center" cellpadding="1" cellspacing="1" class="product" border="1">
 	<tr>
 		<td valign="top">
 			<div><a href="index.php?view=product&id=<?php echo $item['id']?>"><img src="images/<?php echo $item['image']?>" alt="" style="width:100px;/></a></div>
@@ -17,6 +17,17 @@ foreach($products as $item){?>
 </table>
 
 
-<?php } ?>
-
-
+<?php } 
+$count_post =  get_products()[1];
+echo "Page: ";
+for($i = 0, $ii = 1; $i < $count_post; $i=$i+1, $ii++)
+{
+	if($i == ($_GET['page']))
+	{
+		echo "<a >{$ii} </a>";
+	}
+	else{
+		echo "<a href='index.php?page={$i}'>{$ii} </a>";
+	}
+}
+?>

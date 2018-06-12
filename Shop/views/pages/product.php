@@ -5,7 +5,7 @@
 
 
 
-<table align="center" cellpadding="0" cellspacing="0" class="product" border="0">
+<table align="center" cellpadding="1" cellspacing="1" class="product" border="1">
 	<tr>
 		<td valign="top">
 			<div><a href="#"><img src="images/<?php echo $product['image']?>" alt="" style="width:100px;/></a></div>
