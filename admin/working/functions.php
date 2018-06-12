@@ -47,9 +47,10 @@
 		$stmt->bind_param("sss",$signupEmail, $signupName, $signupPassword);
 		//$stmt->execute();
 		if ($stmt->execute()){
-			echo "\n Õnnestus!";
+			return 1;
 		} else {
 			echo "\n Tekkis viga : " .$stmt->error;
+			return 0;
 		}
 		$stmt->close();
 		$mysqli->close();
