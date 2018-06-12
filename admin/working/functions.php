@@ -41,14 +41,9 @@
 	}
 	//Register new user 
 	function signUp($signupEmail, $signupPassword, $signupName){
-		//loome andmebaasiühenduse
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
-		//valmistame ette käsu andmebaasiserverile
 		$stmt = $mysqli->prepare("INSERT INTO users (email, username, password) VALUES (?, ?, ?)");
 		echo $mysqli->error;
-		//s - string
-		//i - integer
-		//d - decimal
 		$stmt->bind_param("sss",$signupEmail, $signupName, $signupPassword);
 		//$stmt->execute();
 		if ($stmt->execute()){

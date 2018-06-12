@@ -4,9 +4,9 @@ require("functions.php");
 
 $database = "if17_Tantsumeka";
 
-	//väljalogimine
+	//LOG OUT
 	if(isset($_GET["logout"])){
-		session_destroy(); //lõpetab sessiooni
+		session_destroy(); 
 		header("Location: login.php");
 	}
 
@@ -53,7 +53,7 @@ $database = "if17_Tantsumeka";
     $signupNameError = "";
     if(isset($_POST["signupButton"])){
 
-        //kontrollime, kas kirjutati kasutajanimeks email
+        //IS USER NAEM EMAIL
         if (isset ($_POST["signupEmail"])){
             if (empty ($_POST["signupEmail"])){
                 $signupEmailError ="NB! Väli on kohustuslik!";
@@ -69,13 +69,13 @@ $database = "if17_Tantsumeka";
             if (empty ($_POST["signupPassword"])){
                 $signupPasswordError = "NB! Väli on kohustuslik!";
             } else {
-                //polnud tühi
+                //is not empty
                 if (strlen($_POST["signupPassword"]) < 6){
                     $signupPasswordError = "NB! Liiga lühike salasõna, vaja vähemalt 6 tähemärki!";
                 }
             }
         }
-        //kontrollime, kas kirjutati nime
+        //is name written
   	    if (isset ($_POST["signupName"])){
             if (empty($_POST["signupName"])){
                 $signupFirstNameError ="NB! Väli on kohustuslik!";
@@ -83,7 +83,7 @@ $database = "if17_Tantsumeka";
                 $signupFirstName = test_input($_POST["signupName"]);
             }
         }
-    //UUE KASUTAJA ANDMEBAASI KIRJUTAMINE
+    //ADDING NEW USER
         if (empty($signupEmailError) and empty($signupPasswordError) and empty($signupNameError)){
             echo "Hakkan salvestama!";
             //krüpteerin parooli
@@ -92,22 +92,14 @@ $database = "if17_Tantsumeka";
             signUp($signupEmail, $signupPassword, $signupName);
         }
 
-    } //KAS VAJUTATI signupButton-it
+    } 
 
 
-	//kui pole sisseloginud, siis sisselogimise lehele
+	//IF NOT LOGGED IN , logout
 	if(!isset($_SESSION["userId"])){
 		header("Location: login.php");
 		exit();
 	}
-
-	//kui logib välja
-	if (isset($_GET["logout"])){
-		//lõpetame sessiooni
-		session_destroy();
-		header("Location: login.php");
-	}
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -116,6 +108,9 @@ $database = "if17_Tantsumeka";
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <script src="js/admin.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="sidenav">
@@ -126,44 +121,84 @@ $database = "if17_Tantsumeka";
             <a href="?logout=1">Logi välja</a>
         </div>
         <div class="main" id="shop" style="display: block; " >
-            <div id="upload"> 
-                <h2>Uploader</h2>
-                <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype='multipart/form-data'>
-                    <input placeholder="nimetus" name="name" type="text" required="">
-                    <input placeholder="kirjeldus" name="description" type="text" required="">
-                    <input placeholder="hind" name="price" type="text" required="">
-                    <select name="category">
-                        <option value="m_s">Meeste standardtants </option>
-                        <option value="m_l">Meeste Ladina</option>
-                        <option value="m_s">Meeste standardtants </option>
-                        <option value="m_l">Meeste ladina</option>
-                        <option value="m_h">Meeste harrastustants</option>
-                        <option value="m_a">Meeste argentiina tango</option>
-                        <option value="m_t">Meeste treeninguks</option>
-                        <option value="m_p">Meeste pidulikud</option>
-                        <option value="n_s">Naise standardtants </option>
-                        <option value="n_l">Naise ladina</option>
-                        <option value="n_h">Naise harrastustants</option>
-                        <option value="n_a">Naise argentiina tango</option>
-                        <option value="n_t">Naise treeninguks</option>
-                        <option value="n_p">Naise pidulikud</option>
-                        <option value="l">Lastele</option>
-                    </select>
-                    <select name="heel">
-                        <option value="5cm peenkonts">5cm peenkonts</option>
-                        <option value="7cm peenkonts">7cm peenkonts</option>
-                        <option value="8cm peenkonts">8cm peenkonts</option>
-                        <option value="5cm alt laienev konst">5cm alt laienev konst</option>
-                        <option value="7cm alt laienev konst">7cm alt laienev konst</option>
-                        <option value="8cm alt laienev konst">8cm alt laienev konst</option>
-                    </select>
-                    <input type='file' name='file' />
-                    <input type='submit' value='Save' name='but_upload'>
-                </form>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a id="shopAdd" class="nav-link active" href="#" onclick="showShopAdd()">Lisa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="shopUpdate" class="nav-link" href="#" onclick="showShopUpdate()">Muuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="shopDelete" class="nav-link" href="#" onclick="showShopDelete()">Kustuta</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div id="shopAddContent" style="display: block; "> 
+                        <section class="container-fluid">
+                            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype='multipart/form-data'>
+                                <div class="form-row">
+                                    <div class="form-group row">
+                                        <div class="form-group col-md-5">
+                                            <input placeholder="nimetus" class="form-control" name="name" type="text" required="">
+                                        </div>
+                                        <div class="form-group col-md-5">    
+                                            <input placeholder="kirjeldus" class="form-control" name="description" type="text" required="">
+                                        </div>
+                                        <div class="form-group col-md-5">    
+                                            <input placeholder="hind" class="form-control" name="price" type="text" required="">
+                                        </div>
+                                        <select name="category" class="form-control col-md-5">
+                                            <option value="m_s">Meeste standardtants </option>
+                                            <option value="m_l">Meeste Ladina</option>
+                                            <option value="m_s">Meeste standardtants </option>
+                                            <option value="m_l">Meeste ladina</option>
+                                            <option value="m_h">Meeste harrastustants</option>
+                                            <option value="m_a">Meeste argentiina tango</option>
+                                            <option value="m_t">Meeste treeninguks</option>
+                                            <option value="m_p">Meeste pidulikud</option>
+                                            <option value="n_s">Naise standardtants </option>
+                                            <option value="n_l">Naise ladina</option>
+                                            <option value="n_h">Naise harrastustants</option>
+                                            <option value="n_a">Naise argentiina tango</option>
+                                            <option value="n_t">Naise treeninguks</option>
+                                            <option value="n_p">Naise pidulikud</option>
+                                            <option value="l">Lastele</option>
+                                        </select>
+                                        <select name="heel" class="form-control col-md-5">
+                                            <option value="5cm peenkonts">5cm peenkonts</option>
+                                            <option value="7cm peenkonts">7cm peenkonts</option>
+                                            <option value="8cm peenkonts">8cm peenkonts</option>
+                                            <option value="5cm alt laienev konst">5cm alt laienev konst</option>
+                                            <option value="7cm alt laienev konst">7cm alt laienev konst</option>
+                                            <option value="8cm alt laienev konst">8cm alt laienev konst</option>
+                                        </select>  
+                                    </div>
+                                    <div class="custom-file col-md-5">
+                                            <input type="file" class="custom-file-input" id="customFile" name='file' />
+                                            <label class="custom-file-label" for="customFile"></label>
+                                    </div>
+                                </div> 
+                                <br>   
+                                <input type='submit' value='Salvesta' name='but_upload' class="btn btn-primary mb-2">    
+                            </form>
+                        </section>
+                    </div>
+                    <div id="shopUpdateContent" style="display: none;">
+                        
+                    </div>
+                    <div id="shopDeleteContent" style="display: none;">
+
+                    </div>
+                </div>
             </div>
+            
         </div>
         <div class="main" id="calendar" style="display: none; " >
-            <h1>calender</h1>
+            <h1>calendar</h1>
+            <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
         <div class="main" id="info" style="display: none; " >
             <h1>info</h1>
@@ -217,10 +252,7 @@ $database = "if17_Tantsumeka";
                         </div>
                     </div>
                 </form>
-            </div>
-        </section>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+            </section>
+        </div>
     </body>
 </html> 
