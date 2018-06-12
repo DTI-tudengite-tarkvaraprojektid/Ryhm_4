@@ -20,7 +20,7 @@
 				$_SESSION["name"] = $nameFromDb;
 				$_SESSION["userEmail"] = $emailFromDb;
 				//lähen pealehele
-				header("Location: calendar.php");//saadab
+				header("Location: index.php");//saadab
 				exit();
 			} else {
 				$notice = "Vale salasõna!";
