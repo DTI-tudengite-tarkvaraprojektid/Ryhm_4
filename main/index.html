@@ -21,6 +21,9 @@
     		var x = document.getElementById("tutvustus");
     	     x.style.display = "block";
     	}
+		function collapsePanels(){
+			jQuery('.collapse').collapse('hide');
+		}
 	</script>
 </head>
 <body>
@@ -141,7 +144,7 @@
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center">Matis Toome</h3>
-				<p class="card-text">Tantsumeka juht ja tantsuõpetaja Matis Toome on tegelenud võistlustantsuga üle 25 aasta. 1995. aastal sooritas ta Eesti Tantsuõpetajate Liidus esimesed tantsuõpetaja eksamid ja alustas võistlemist Helen Klandorf-Sadamaga elukutselise võistluspaarina. <a data-toggle="collapse" href="#treener1" aria-expanded="false" aria-controls="treener1">loe edasi..
+				<p class="card-text">Tantsumeka juht ja tantsuõpetaja Matis Toome on tegelenud võistlustantsuga üle 25 aasta. 1995. aastal sooritas ta Eesti Tantsuõpetajate Liidus esimesed tantsuõpetaja eksamid ja alustas võistlemist Helen Klandorf-Sadamaga elukutselise võistluspaarina. <a data-toggle="collapse" onclick="collapsePanels()" href="#treener1" aria-expanded="false" aria-controls="treener1">loe edasi..
 				</a></p>
                 <div class="collapse" id="treener1">
 				<div class="card card-body" id="tabp">
@@ -156,7 +159,7 @@ Nende parimad saavutused on tantsuspordis EM 5. koht ja MM 9. koht. Tallinna Ül
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center">Timo Alavere</h3>
-				<p class="card-text">Timo Alavere on tegelenud võistlustantsuga 9 aastat ning õppinud Matis Toome, Helen Klandorf-Sadama, Heili Klandorfi ja teiste Revalia Tantsukooli õpetajate käe all. Timo sportlaskarjäär lõppes kodupubliku ees Rakveres aastal 2011. <a data-toggle="collapse" href="#treener2" aria-expanded="false" aria-controls="treener2">loe edasi..</a></p>
+				<p class="card-text">Timo Alavere on tegelenud võistlustantsuga 9 aastat ning õppinud Matis Toome, Helen Klandorf-Sadama, Heili Klandorfi ja teiste Revalia Tantsukooli õpetajate käe all. Timo sportlaskarjäär lõppes kodupubliku ees Rakveres aastal 2011. <a data-toggle="collapse" href="#treener2" onclick="collapsePanels()" aria-expanded="false" aria-controls="treener2">loe edasi..</a></p>
 				<div class="collapse" id="treener2">
 				<div class="card card-body" id="tabp">
 				<p class="card-text">
@@ -170,7 +173,7 @@ Juba tantsusportlasena alustas Timo tantsutreeningute läbiviimist oma kodukohas
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center">Käthe Kobin</h3>
-				<p class="card-text">Käthe Kobin on tegelenud tantsuga peaaegu kogu oma elu, alustades 4. aastasena balletitundides ning sealt edasi võistlustantsutreeningutega. Pärast aktiivset võistlustantsijakarjääri sooritas Käthe Eesti Tantsuõpetajate Liidu seltskonna-ja võistlustantsuõpetaja kutseeksami. <a data-toggle="collapse" href="#treener3" aria-expanded="false" aria-controls="treener3">loe edasi..</a></p>
+				<p class="card-text">Käthe Kobin on tegelenud tantsuga peaaegu kogu oma elu, alustades 4. aastasena balletitundides ning sealt edasi võistlustantsutreeningutega. Pärast aktiivset võistlustantsijakarjääri sooritas Käthe Eesti Tantsuõpetajate Liidu seltskonna-ja võistlustantsuõpetaja kutseeksami. <a data-toggle="collapse" onclick="collapsePanels()" href="#treener3" aria-expanded="false" aria-controls="treener3">loe edasi..</a></p>
 				<div class="collapse" id="treener3">
 				<div class="card card-body" id="tabp">
 				<p class="card-text">
@@ -185,7 +188,7 @@ Juba tantsusportlasena alustas Timo tantsutreeningute läbiviimist oma kodukohas
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center">Elery Kiviberg</h3>
-				<p class="card-text">Elery Kiviberg alustas treeninguid lapsepõlves kujundrulluisutajana. Armastus võistlustantsu vastu tekkis Eleryl 4. klassi lõpupeol, kus esines võistlustantsupaar ja juba järgmisel nädalal läks ta esimesse tantsutundi. <a data-toggle="collapse" href="#treener4" aria-expanded="false" aria-controls="treener4">loe edasi..</a></p>
+				<p class="card-text">Elery Kiviberg alustas treeninguid lapsepõlves kujundrulluisutajana. Armastus võistlustantsu vastu tekkis Eleryl 4. klassi lõpupeol, kus esines võistlustantsupaar ja juba järgmisel nädalal läks ta esimesse tantsutundi. <a onclick="collapsePanels()" data-toggle="collapse" href="#treener4" aria-expanded="false" aria-controls="treener4">loe edasi..</a></p>
 				<div class="collapse" id="treener4">
 				<div class="card card-body" id="tabp">
 				<p class="card-text">
@@ -200,7 +203,7 @@ Elery on treeninud mitmetes tantsukoolides nii Eestis kui Soomes, sealhulgas Rev
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center">Anna Kustova</h3>
-				<p class="card-text">Anna Kustova on tegelenud võistlustantsuga alates 7. eluaastast. Kogu tema tantsijakarjäär on olnud täis huvitavaid tutvumisi, praktikat, võstlusi ja esinemisi ning see lõppes ülikooli õppima asumisega. Ülikoolis õppides alustas Anna tantsuõpetajana. <a data-toggle="collapse" href="#treener5" aria-expanded="false" aria-controls="treener5">loe edasi..
+				<p class="card-text">Anna Kustova on tegelenud võistlustantsuga alates 7. eluaastast. Kogu tema tantsijakarjäär on olnud täis huvitavaid tutvumisi, praktikat, võstlusi ja esinemisi ning see lõppes ülikooli õppima asumisega. Ülikoolis õppides alustas Anna tantsuõpetajana. <a onclick="collapsePanels()" data-toggle="collapse" href="#treener5" aria-expanded="false" aria-controls="treener5">loe edasi..
 				</a></p>
 				<div class="collapse" id="treener5">
 				<div class="card card-body" id="tabp">
@@ -216,7 +219,7 @@ Praegu tegeleb Anna enda jaoks Bailatino trennidega ning aitab kaasa ka seltskon
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center">Liina-Liis Liiv-Toome</h3>
-				<p class="card-text">Liina-Liis Liiv-Toome on Tantsumeka asutajaliige ja üks tantsukooli eestvedajatest. Liina-Liis on õppinud paljusid tantsustiile alates võistlustantsust kuni klassikalise ning kaasaegse tantsuni välja. <a data-toggle="collapse" href="#treener6" aria-expanded="false" aria-controls="treener6">loe edasi..</a></p>
+				<p class="card-text">Liina-Liis Liiv-Toome on Tantsumeka asutajaliige ja üks tantsukooli eestvedajatest. Liina-Liis on õppinud paljusid tantsustiile alates võistlustantsust kuni klassikalise ning kaasaegse tantsuni välja. <a onclick="collapsePanels()" data-toggle="collapse" href="#treener6" aria-expanded="false" aria-controls="treener6">loe edasi..</a></p>
 				<div class="collapse" id="treener6">
 				<div class="card card-body" id="tabp">
 				<p class="card-text">
