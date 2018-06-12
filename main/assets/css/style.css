@@ -32,6 +32,21 @@ body {
   margin-bottom: 1rem;
 }
 
+.googleCalendar{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 40%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /*Tantsumeka*/
 .welcome h1 {
@@ -49,16 +64,14 @@ body {
   color: black;
 }
 
-.about-1 p, 
-.about-2 p {
+.about-1 p {
   font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: black;
 }
 
-.about-1 h3, 
-.about-2 h3 {
+.about-1 h3 {
   font-size: 2.75rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -179,7 +192,7 @@ body {
 }
 
 .welcome {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 2rem;
 }
@@ -360,16 +373,14 @@ hr.light-100 {
   font-weight: 500;
   color: black;
 }
-.about-1 p, 
-.about-2 p {
+.about-1 p {
   font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: black;
 }
 
-.about-1 h3, 
-.about-2 h3 {
+.about-1 h3 {
   font-size: 1.7rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
