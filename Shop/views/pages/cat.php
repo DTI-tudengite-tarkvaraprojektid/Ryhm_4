@@ -22,7 +22,7 @@ foreach($products as $item){?>
 $count_post =  get_cat_products($cat)[1];
 
 echo "Page: ";
-for($i = 0, $ii = 1; $i < $count_post; $i=$i+1, $ii++)
+for($i = 0, $ii = 1; $i < $count_post; $i=$i+12, $ii++)
 {
 	if($i == ($_GET['page']))
 	{

@@ -36,6 +36,8 @@ body {
   height:60px;   /* Height of the footer */
   background:black;
 }
+
+/*menüü riba värv*/
 .bg-logo {
   background-color: black;
 }
@@ -105,6 +107,23 @@ body {
 .card .card-body {
   border-radius: 4px;
 }
+
+/*Treeneri nupp*/
+.card .card-body .btn {
+	font-size: 1.2rem;
+  	font-family: 'Montserrat', sans-serif;
+  	font-weight: 400i;
+  	color: black;
+  	border: 0px solid transparent;
+  	text-align: center;
+  	padding-top: 30px; 
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
 .card {
   background-color: #fff4b3; 
   border: 0px solid black;

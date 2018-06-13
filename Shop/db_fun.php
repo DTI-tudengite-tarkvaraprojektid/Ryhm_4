@@ -27,12 +27,12 @@
 		$row1 = mysqli_fetch_array($count_prod);
 		$count_post = $row1[0];
 
-		$query = "SELECT * FROM products ORDER BY id DESC LIMIT 1";
+		$query = "SELECT * FROM products ORDER BY id DESC LIMIT 12";
 		
 		if(isset($_GET['page']))
 		{
 			$page = (int)$_GET['page'];
-			$query = "SELECT * FROM products ORDER BY id DESC LIMIT $page,1";
+			$query = "SELECT * FROM products ORDER BY id DESC LIMIT $page,12";
 		}
 		
 		$result = mysqli_query(db_connect(),$query);
@@ -46,12 +46,12 @@
 		$row1 = mysqli_fetch_array($count_prod);
 		$count_post = $row1[0];
 		
-		$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT 1";
+		$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT 12";
 		
 		if(isset($_GET['page']))
 		{
 			$page = (int)$_GET['page'];
-			$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT $page,1";
+			$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT $page,12";
 		}
 		
 		$result = mysqli_query(db_connect(),$query);
@@ -59,9 +59,24 @@
 		return array($result, $count_post);
 	}
 	
+		function get_cat_sex()
+	{
+		$query = "SELECT * FROM sex ORDER BY id";
+		$result = mysqli_query(db_connect(),$query);
+		$result = db_result_to_array($result);
+		return $result;
+	}
+	
 	function get_cat()
 	{
-		$query = "SELECT * FROM categories ORDER BY id DESC";
+		$query = "SELECT * FROM categories ORDER BY id";
+		
+		if(isset($_GET['sex']))
+		{
+			$sex = $_GET['sex'];
+			$query = "SELECT * FROM categories WHERE sex='$sex' ORDER BY id ";
+		}
+		
 		$result = mysqli_query(db_connect(),$query);
 		$result = db_result_to_array($result);
 		return $result;
