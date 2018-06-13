@@ -76,19 +76,13 @@
 	</div>
 </div>
 </nav>
+
 	<?php include('views/pages/category.php'); ?>
-	
+
     <main>
-    <div class="container-fluid col-lg-10 padding">
-    <div class="row padding">
-	      <div class="col-12" id="tantsud">
-		      <h2 class="text-center">Treenerid</h2>
-	      </div>
-	    
+
 		        <?php include('views/pages/'.$view.'.php'); ?>
 
-    </div>
-    </div>
     </main>
 </body>
 </html>
