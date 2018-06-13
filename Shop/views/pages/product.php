@@ -26,15 +26,15 @@
 	<a><?php echo $product['name']?></a><br><br>
 	<input type="hidden" name="toode" value="<?php echo $product['name']?>" />
 	<a>Vali kiinga suurus</a>
-	<select>
+	<select id="sizeVal" onclick="getValuesSize()">
 		<option value="volvo">Volvo</option>
 		<option value="saab">Saab</option>
 		<option value="vw">VW</option>
 		<option value="audi" selected>Audi</option>
 	</select> <br><br>
-	<input type="hidden" name="suurus" value="" />
+	<input id="size" type="hidden" name="suurus" value="" />
 	<a>Konsta valik:</a><br>
-	<select id="konstVal" onselect="el = document.getElementById("konst").value; res = document.getElementById("konstVal"); el.value = ">
+	<select id="konstVal" onclick="getValuesKonst()">
 		<option value="volvo">Volvo</option>
 		<option value="saab">Saab</option>
 		<option value="vw">VW</option>
@@ -71,5 +71,13 @@
     <input type="hidden" name="_subject" value="Tellimine" />
     <input type="hidden" name="_format" value="plain" />
     <input type="text" name="_gotcha" style="display:none" />
-	<input type="submit" value="Send" onclick="">
+	<input type="submit" value="Send">
+	<script>
+		function getValuesKonst() {
+    		document.getElementById("konst").value = document.getElementById("konstVal").value;
+		}
+		function getValuesSize(){
+			document.getElementById("size").value = document.getElementById("sizeVal").value;
+		}
+	</script>
 </form>

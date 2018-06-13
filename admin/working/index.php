@@ -1,8 +1,6 @@
 <?php
 
-require("functions.php");
-
-$database = "if17_Tantsumeka";
+    require("functions.php");
 
 	//LOG OUT
 	if(isset($_GET["logout"])){

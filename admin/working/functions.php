@@ -1,6 +1,5 @@
 <?php
 	require("config.php");
-	$database = "if17_Tantsumeka";
 	//alustame sessiooni
 	session_start();
 	function signIn($email, $password){
