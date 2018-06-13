@@ -6,7 +6,18 @@ var calendar = document.getElementById("calendar");
 var infoChanger = document.getElementById("info");
 var newUser = document.getElementById("user");
 */
-
+//Open close navbar
+function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  } 
 
 //SHOW HIDE FUNCTIONS LEFT NAVBAR
 function ShowShop(){
@@ -14,6 +25,8 @@ function ShowShop(){
     var calendar = document.getElementById("calendar");
     var infoChanger = document.getElementById("info");
     var newUser = document.getElementById("user");
+    //var save = document.getElementById("userSaved");
+    //save.style.direction = "none"
     shop.style.display = "block";
     calendar.style.display = "none";
     infoChanger.style.display = "none";
@@ -25,6 +38,8 @@ function ShowCalendar(){
     var calendar = document.getElementById("calendar");
     var infoChanger = document.getElementById("info"); 
     var newUser = document.getElementById("user");
+    //var save = document.getElementById("userSaved");
+   // save.style.direction = "none"
     shop.style.display = "none";
     calendar.style.display = "block";
     infoChanger.style.display = "none";
@@ -36,6 +51,8 @@ function ShowChangeInfo(){
     var calendar = document.getElementById("calendar");
     var infoChanger = document.getElementById("info");
     var newUser = document.getElementById("user");
+    //var save = document.getElementById("userSaved");
+    //save.style.direction = "none"
     shop.style.display = "none";
     calendar.style.display = "none";
     infoChanger.style.display = "block";
@@ -47,6 +64,8 @@ function ShowCreateUser(){
     var calendar = document.getElementById("calendar");
     var infoChanger = document.getElementById("info");
     var newUser = document.getElementById("user");
+    //var save = document.getElementById("userSaved");
+    //save.style.direction = "none"
     shop.style.display = "none";
     calendar.style.display = "none";
     infoChanger.style.display = "none";
@@ -95,4 +114,17 @@ function showShopDelete(){
     add.className = "nav-link";
     update.className = "nav-link";
     del.className = "nav-link active";
+}
+//---SQL BUTTON ACTIONS TO SAVE WEBPAGE STATE AFTER RELOAD---//
+function userSaving(){
+    var shop = document.getElementById("shop");
+    var calendar = document.getElementById("calendar");
+    var infoChanger = document.getElementById("info");
+    var newUser = document.getElementById("user");
+    //var save = document.getElementById("userSaved");
+    //save.style.direction = "block"
+    shop.style.display = "none";
+    calendar.style.display = "none";
+    infoChanger.style.display = "none";
+    newUser.style.display = "block";
 }
