@@ -80,16 +80,9 @@
 	<?php include('views/pages/category.php'); ?>
 
     <main>
-
-<<<<<<< HEAD
-=======
     <div class="container-fluid col-lg-10 padding">
     <div class="row padding">
-	      <div class="col-12" id="tantsud">
-		      <h2 class="text-center">Treenerid</h2>
-	      </div>
-	    
->>>>>>> fb95a4edee9be96c2faef9e0793d7acba27efbf3
+
 		        <?php include('views/pages/'.$view.'.php'); ?>
 
     </main>
