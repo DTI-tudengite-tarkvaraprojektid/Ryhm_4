@@ -117,13 +117,14 @@ $database = "if17_Tantsumeka";
         <script src="js/admin.js"></script>
     </head>
     <body>
-        <!--Sidebar-NavBar-->
-        <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="display:none" id="mySidebar">
-            <button class="w3-bar-item w3-button w3-hide-large"onclick="w3_close()">Sulge &times;</button>
-            <a href="#" class="w3-bar-item w3-button" onclick="ShowShop()">Pood</a>
-            <a href="#" class="w3-bar-item w3-button" onclick="ShowCalendar()">calender</a>
-            <a href="#" class="w3-bar-item w3-button" onclick="ShowChangeInfo()">Muuda info</a>
-            <a href="#" class="w3-bar-item w3-button" onclick="ShowCreateUser()">Loo konto</a>
+
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large"
+            onclick="w3_close()">Sulge &times;</button>
+            <a href="#shop" target="_self" class="w3-bar-item w3-button" >Pood</a><!--onclick="ShowShop()"-->
+            <a href="#calendar" target="_self" class="w3-bar-item w3-button" >calender</a><!--onclick="ShowCalendar()"-->
+            <a href="#changeInfo" target="_self" class="w3-bar-item w3-button">Muuda info</a><!-- onclick="ShowChangeInfo()"-->
+            <a href="#createUser" target="_self" class="w3-bar-item w3-button" >Loo konto</a><!-- onclick="ShowCreateUser()"-->
             <a class="w3-bar-item w3-button" href="?logout=1">Logi välja</a>
         </div>
         <!--MAIN-->
@@ -135,119 +136,61 @@ $database = "if17_Tantsumeka";
                     <h1>Tantsumeka | admin</h1>
                 </div>
             </div>
-            <!--ADMIN SHOP-->    
-            <div class="w3-container" id="shop" style="display: block">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a id="shopAdd" class="nav-link active" href="#" onclick="showShopAdd()">Lisa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="shopUpdate" class="nav-link" href="#" onclick="showShopUpdate()">Muuda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="shopDelete" class="nav-link" href="#" onclick="showShopDelete()">Kustuta</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <div id="shopAddContent" style="display: block; "> 
-                            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype='multipart/form-data'>
-                                <div>
-                                    <div>
-                                        <div>
-                                            <input placeholder="nimetus" class="w3-input w3-border w3-hover-blue" name="name" type="text" required="">
-                                        </div>
-                                    <div>    
-                                        <input placeholder="kirjeldus" class="w3-input w3-border w3-hover-blue" name="description" type="text" required="">
-                                    </div>
-                                    <div>    
-                                        <input placeholder="hind" class="w3-input w3-border w3-hover-blue" name="price" type="text" required="">
-                                    </div>
-                                    <select name="category" class="form-control col-md-5">
-                                        <option value="m_s">Meeste standardtants </option>
-                                        <option value="m_l">Meeste Ladina</option>
-                                        <option value="m_s">Meeste standardtants </option>
-                                        <option value="m_l">Meeste ladina</option>
-                                        <option value="m_h">Meeste harrastustants</option>
-                                        <option value="m_a">Meeste argentiina tango</option>
-                                        <option value="m_t">Meeste treeninguks</option>
-                                        <option value="m_p">Meeste pidulikud</option>
-                                        <option value="n_s">Naise standardtants </option>
-                                        <option value="n_l">Naise ladina</option>
-                                        <option value="n_h">Naise harrastustants</option>
-                                        <option value="n_a">Naise argentiina tango</option>
-                                        <option value="n_t">Naise treeninguks</option>
-                                        <option value="n_p">Naise pidulikud</option>
-                                        <option value="l">Lastele</option>
-                                    </select>
-                                    <select name="heel" class="form-control col-md-5">
-                                        <option value="5cm peenkonts">5cm peenkonts</option>
-                                        <option value="7cm peenkonts">7cm peenkonts</option>
-                                        <option value="8cm peenkonts">8cm peenkonts</option>
-                                        <option value="5cm alt laienev konst">5cm alt laienev konst</option>
-                                        <option value="7cm alt laienev konst">7cm alt laienev konst</option>
-                                        <option value="8cm alt laienev konst">8cm alt laienev konst</option>
-                                    </select>  
-                                </div>
-                                <div class="custom-file col-md-5">
-                                    <input type="file" class="custom-file-input" id="customFile" name='file' />
-                                    <label class="custom-file-label" for="customFile"></label>
-                                </div>
-                                <br>   
-                                <input type='submit' value='Salvesta' name='but_upload' class="btn btn-primary mb-2">    
-                            </form>
-                        </div>
-                        <div  id="shopUpdateContent" style="display: none;">
-                            <a>Test</a>
-                        </div>
-                        <div id="shopDeleteContent" style="display: none;">
-                            <a>Test</a>
-                        </div>
-                    </div>
+            <!--ADMIN SHOP--> 
+            <section id="shop>" 
+                <div class="w3-container" id="shop">
+                    <p>In this example, the sidebar is hidden (style="display:none")</p>
+                    <p>It is shown when you click on the menu icon in the top left corner.</p>
+                    <p>When it is opened, it shifts the page content to the right.</p>
+                    <p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
                 </div>
-            </div>    
-                <!--ADMIN CALENDAR-->  
-                <div class="w3-container" id="calendar" style="display: block;" >
+            </section>    
+            <!--ADMIN CALENDAR-->
+            <section id="calendar">
+                <div class="w3-container" id="calendar">
                     <h1>calendar</h1>
                     <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <!--ADMIN MAIN PAGE CONTENT-->
-                <div class="w3-container" id="info" style="display: block;" >
+            </section>    
+            <!--ADMIN MAIN PAGE CONTENT-->
+            <section id="changeInfo">
+                <div class="w3-container" id="info" style="display: none;" >
                     <h1>info</h1>
                 </div>
-                <!--ADMIN EDIT USERS-->
-                <div class="w3-container" id="user" style="display: block;" >
-                    <h1>Konto Loomine</h1>
+            </section>
+            <!--ADMIN EDIT USERS-->
+            <section id="createUser">
+                <div class="w3-container" id="user">
+                    <div class="w3-container"><h1>Konto Loomine</h1></div>
                     <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                        <div>
-                            <input name="signupEmail" type="email" class="w3-input w3-border w3-hover-blue" id="inputEmail3" placeholder="Email" value="<?php echo $signupEmail;?>">
+                        <div class="w3-container">
+                            <input name="signupEmail" type="email" class="w3-input w3-border w3-hover-grey" id="inputEmail3" placeholder="Email" value="<?php echo $signupEmail;?>">
                             <span><?php echo $signupEmailError; ?></span>
                         </div>
-                        <div>
-                            <input name="signupPassword" type="password" class="w3-input w3-border w3-hover-blue" id="inputPassword3" placeholder="Password">
+                        <div class="w3-container">
+                            <input name="signupPassword" type="password" class="w3-input w3-border w3-hover-grey" id="inputPassword3" placeholder="Password">
                             <span><?php echo $signupPasswordError; ?></span>
                         </div>
-                        <div >
-                            <input name="signupName" type="text" class="w3-input w3-border w3-hover-blue" id="inputAddress" placeholder="Nimi" value="<?php echo $signupName; ?>">
+                        <div class="w3-container">
+                            <input name="signupName" type="text" class="w3-input w3-border w3-hover-grey" id="inputAddress" placeholder="Nimi" value="<?php echo $signupName; ?>">
                             <span><?php echo $signupNameError; ?></span>
                         </div>
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <input name="signupButton" class="btn btn-primary" type="submit" value="Loo kasutaja">
-                            </div>
+                        <div class="w3-container">
+                            <input name="signupButton" class="w3-button w3-black" type="submit" value="Loo kasutaja">
                         </div>
-                        <div class="card-body" id="userSaved">
+                        </div>
+                        <div class="w3-container" id="userSaved">
                             <?php if(!empty($message)): ?>
-                                <div class="alert alert-success">
-                                    <?php echo $message; ?>
-                                </div>
+                            <div class="w3-panel w3-green w3-display-container">
+                                <span onclick="this.parentElement.style.display='none'"class="w3-button w3-green w3-large w3-display-topright">&times;</span>
+                                <h3>Tulemus</h3>
+                                <?php echo $message; ?>
+                            </div>
                             <?php endif; ?>    
                         </div>
                     </form>    
-                </div> 
-            </div>
-        </div>    
+                </div>    
+            </section>
+        </div>
     </body>
-</html> 
+</html>
