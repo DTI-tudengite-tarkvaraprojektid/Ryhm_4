@@ -27,12 +27,12 @@
 		$row1 = mysqli_fetch_array($count_prod);
 		$count_post = $row1[0];
 
-		$query = "SELECT * FROM products ORDER BY id DESC LIMIT 6";
+		$query = "SELECT * FROM products ORDER BY id DESC LIMIT 12";
 		
 		if(isset($_GET['page']))
 		{
 			$page = (int)$_GET['page'];
-			$query = "SELECT * FROM products ORDER BY id DESC LIMIT $page,6";
+			$query = "SELECT * FROM products ORDER BY id DESC LIMIT $page,12";
 		}
 		
 		$result = mysqli_query(db_connect(),$query);
@@ -46,12 +46,12 @@
 		$row1 = mysqli_fetch_array($count_prod);
 		$count_post = $row1[0];
 		
-		$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT 6";
+		$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT 12";
 		
 		if(isset($_GET['page']))
 		{
 			$page = (int)$_GET['page'];
-			$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT $page,6";
+			$query = "SELECT * FROM products WHERE category='$cat' ORDER BY id DESC LIMIT $page,12";
 		}
 		
 		$result = mysqli_query(db_connect(),$query);
