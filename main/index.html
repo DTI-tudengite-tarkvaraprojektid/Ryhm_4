@@ -49,7 +49,7 @@
 			    </div>
 			</li>
 			<li class="nav-item dropdown">
-			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">HOBITANTS</a>
+			    <a class="nav-link"  data-toggle="dropdown" href="#" style="color: #ffef8f;">HOBITANTS</a>
 			    <div class="dropdown-menu">
 			      <a class="dropdown-item" href="#hobiklubi" target="_self" onclick="hideHeaderText()">Hobiklubi</a>
 			      <a class="dropdown-item" href="#" target="_self">Kalender</a>
@@ -462,8 +462,8 @@ Maksumus paarile: 171 €
 </div>	
 </section>
 
-<section id="kursused_calendar">				
-<div class="container-fluid padding">
+<section  id="kursused_calendar">				
+<div class="container-fluid padding d-none d-sm-block">
 <div class="row padding">
 	<div class="col-xl-2 col-lg-2 col-md-1">
     </div>
@@ -477,7 +477,21 @@ Maksumus paarile: 171 €
     </div>
 </div>
 </div>
-</section>
+	<div class="container-fluid padding d-block d-sm-none">
+	<div class="row padding">
+		<div class="col-xl-2 col-lg-2 col-md-1">
+		</div>
+		<div class="col-xl-8 col-lg-8 col-md-10 about-1">
+			<h3 class="display-4 text-center">Kalender</h3>
+			<div class="googleCalendar text-center">
+				  <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+		<div class="col-xl-2 col-lg-2 col-md-1">
+		</div>
+	</div>
+	</div>
+</section>	
 
 <section id="kursus_registration">				
 <div class="container-fluid padding">
@@ -485,8 +499,20 @@ Maksumus paarile: 171 €
 	<div class="col-xl-3 col-lg-2 col-md-1">
     </div>
     <div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Registreeri</h3>
-		<p>Registration form</p>
+		
+		<div class="contact-clean">
+			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
+				<h3 class="display-4 text-center">Registreeri</h3>
+				<div class="form-group"><input class="form-control" type="text" name="nimi" placeholder="Name" /></div>
+				<div class="form-group"><input class="form-control is-invalid" type="email" name="_replyto" placeholder="Email" /><small class="form-text text-danger">Please enter a correct email address.</small></div>
+				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
+				<input type="hidden" name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" />
+            	<input type="hidden" name="_subject" value="Registreerimine" />
+            	<input type="hidden" name="_format" value="plain" />
+            	<input type="text" name="_gotcha" style="display:none" />
+				<div class="form-group"><input class="btn btn-primary" value="Send" type="submit"/></div>
+			</form>
+		</div>
 	</div>
 	<div class="col-xl-3 col-lg-2 col-md-1">
     </div>

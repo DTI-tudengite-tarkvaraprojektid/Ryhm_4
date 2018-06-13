@@ -40,13 +40,26 @@ $count_post =  get_products()[1];
 <?php
 for($i = 0, $ii = 1; $i < $count_post; $i=$i+12, $ii++)
 {
-	if($i == ($_GET['page']))
-	{
-		echo "<a >{$ii} </a>";
-	}
-	else{
-		echo "<a href='?page={$i}'>{$ii} </a>";
-	}
+		if(isset($_GET['page']))
+		{
+			if($i == ($_GET['page']))
+			{
+				echo "<a >{$ii} </a>";
+			}
+			else{
+				echo "<a href='?page={$i}'>{$ii} </a>";
+			}
+		}
+		else
+		{
+			if($i == 0)
+			{
+				echo "<a >{$ii} </a>";
+			}
+			else{
+				echo "<a href='?page={$i}'>{$ii} </a>";
+			}
+		}
 }
 
 ?>
