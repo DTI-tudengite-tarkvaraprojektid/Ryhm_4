@@ -108,6 +108,8 @@ body {
   border-radius: 4px;
 }
 
+
+
 /*Treeneri nupp*/
 .card .card-body .btn {
 	font-size: 1.2rem;
@@ -172,6 +174,25 @@ body {
 .card-body {
   background-color: #fff4b3;
   border: 0px solid black;
+}
+
+/*Pood*/
+.shop-btn .btn-primary1{
+  background-color: #fff4b3;
+  border: 0px solid black;
+  border-radius: 0px;
+}
+
+.btn-primary1:focus,.btn-primary1:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+#shop-menu {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: black;
 }
 
 .nav-tabs .nav-link:focus,
@@ -511,10 +532,13 @@ figure {
   will-change: transform;
 }
 /*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
+[class*="col-"]:not(.tants1) {
     padding: 1rem;
 }
 
+[class*="tants1"] {
+    padding: 0rem;
+}
 
 
 

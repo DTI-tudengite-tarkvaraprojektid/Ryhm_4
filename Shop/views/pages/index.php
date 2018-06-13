@@ -1,4 +1,7 @@
-
+<div class="container-fluid col-lg-10 padding">
+    <div class="row padding">
+	      
+	    
 
 <?php
 $products = get_products()[0];
@@ -7,11 +10,10 @@ foreach($products as $item){?>
 
 
 
-
 <div class="col-lg-2">
 	<div class="card">
 		<div class="card-body">
-			<table align="center" cellpadding="1" cellspacing="1" class="product" border="1">
+			<table align="center" cellpadding="1" cellspacing="1" class="product" border="0">
 				<tr>
 					<td valign="top">
 						<div><a href="index.php?view=product&id=<?php echo $item['id']?>"><img class="card-img-top" src="images/<?php echo $item['image']?>" alt="" /></a></div>
@@ -28,8 +30,14 @@ foreach($products as $item){?>
 
 <?php } 
 $count_post =  get_products()[1];
-echo "Page: ";
-
+?>
+</div>
+</div>
+<div class="container-fluid col-lg-10 padding">
+    <div class="row padding">
+	      <div class="col-12" id="tantsud">
+		      <h4 class="text-center"><a>Page:  </a>
+<?php
 for($i = 0, $ii = 1; $i < $count_post; $i=$i+12, $ii++)
 {
 		if(isset($_GET['page']))
@@ -55,3 +63,9 @@ for($i = 0, $ii = 1; $i < $count_post; $i=$i+12, $ii++)
 }
 
 ?>
+</h4>
+</div>
+</div>
+</div>
+
+
