@@ -20,14 +20,14 @@ foreach($products as $item){?>
 <?php } 
 $count_post =  get_products()[1];
 echo "Page: ";
-for($i = 0, $ii = 1; $i < $count_post; $i=$i+1, $ii++)
+for($i = 0, $ii = 1; $i < $count_post; $i=$i+6, $ii++)
 {
 	if($i == ($_GET['page']))
 	{
 		echo "<a >{$ii} </a>";
 	}
 	else{
-		echo "<a href='index.php?page={$i}'>{$ii} </a>";
+		echo "<a href='?page={$i}'>{$ii} </a>";
 	}
 }
 ?>
