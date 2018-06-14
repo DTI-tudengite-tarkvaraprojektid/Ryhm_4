@@ -112,7 +112,7 @@ body {
 
 /*Treeneri nupp*/
 .card .card-body .btn {
-	font-size: 1.2rem;
+	font-size: 1.7rem;
   	font-family: 'Montserrat', sans-serif;
   	font-weight: 400i;
   	color: black;
@@ -138,6 +138,7 @@ body {
   font-weight: 400;
   color: black;
 }
+
 
 /*Tantsututvustused*/
 #tantsud h2 {
