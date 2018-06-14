@@ -26,7 +26,7 @@
             <div>
                 <p><strong>ID:</strong> <?php echo $userid; ?></p>
                 <strong>Email*</strong> <input type="text" name="email" value="<?php echo $email; ?>"/><br/>
-                <strong>Name *</strong> <input type="text" name="name" value="<?php echo $username; ?>"/><br/>
+                <strong>Name *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
                 <p>* Required</p>
                 <input type="submit" name="submit" value="Submit">
             </div>
@@ -41,8 +41,6 @@
     if (isset($_POST['submit']))
     {
         // confirm that the 'id' value is a valid integer before getting the form data
-        if (is_numeric($_POST['userid']))
-        {
             // get form data, making sure it is valid
             $userid = $_POST['userid'];
             $username = mysql_real_escape_string(htmlspecialchars($_POST['username']));
@@ -64,20 +62,14 @@
                 header("Location: editdata.php");
             }
         }
-        else
-        {
-            // if the 'id' isn't valid, display an error
-            echo 'Error!';
-        }
-    }
     else
     // if the form hasn't been submitted, get the data from the db and display the form
     {
         // get the 'id' value from the URL (if it exists), making sure that it is valid (checing that it is numeric/larger than 0)
-        if (isset($_GET['userid']) && is_numeric($_GET['userid']) && $_GET['userid'] > 0)
+        if (isset($_GET['id'])  && $_GET['id'] > 0)
         {
             // query db
-            $userid = $_GET['userid'];
+            $userid = $_GET['id'];
             $result = mysql_query("SELECT * FROM users WHERE userid=$userid")
             or die(mysql_error());
             $row = mysql_fetch_array($result);
