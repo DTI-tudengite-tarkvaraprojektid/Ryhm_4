@@ -1,6 +1,8 @@
 <?php 
 	$id = $_GET['id'];
 	$product = get_product($id);
+	$pics = array_filter(explode(";", $product['image']));
+	$pics_count = count($pics);
 ?>
 
 
@@ -8,10 +10,12 @@
 <table align="center" cellpadding="1" cellspacing="1" class="product" border="1">
 	<tr>
 		<td valign="top">
-			<div><a href="#"><img src="images/<?php echo $product['image']?>" alt="" style="width:100px;/></a></div>
+			<?php for ($i=0;$i<$pics_count;$i++){ ?>
+			<div><a href="#"><img src="images/<?php echo $pics[$i];?>" alt="" style="width:250px;/></a></div>
+			<?php } ?>
 			<div class="description">
 				<div class="product-name"><a href="#"><?php echo $product['name']?></a></div>
-				<div class="product-price">Price: <?php echo $product['price']?>$</div>
+				<div class="product-price">Price: <?php echo $product['price']?>€</div>
 			</div>
 		</td>
 		<td valign="top">
@@ -42,6 +46,7 @@
 	</select> <br>
 	<input id="konst" type="hidden" name="Konst" value="" />
 	<a href="#">Vaata kontsa infot siit</a><br><br>
+	<a>Juhul kui teil on mitte standartne jalg, palume täita teie jala mõõdut</a><br>
 	<a>Vasaku jala mõõt 1 (mm):</a>
 	<input type="text" name="Vasaku jala mõõt 1 (mm)"><br>
 	<a>Vasaku jala mõõt 2 (mm):</a>
@@ -63,7 +68,7 @@
 	<a>Nimi:</a>
 	<input type="text" name="name"/><br>
 	<a>Mail:</a>
-	<input type="email" name="_replyto" placeholder="Your email" /> ><br>
+	<input type="email" name="_replyto" placeholder="Your email" /> <br>
 	<a>Telefoni number:</a>
 	<input type="text" name="Tel"/><br>
 	
