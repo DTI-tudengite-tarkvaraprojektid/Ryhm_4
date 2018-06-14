@@ -79,6 +79,11 @@
 {
     text-decoration: none;
 }
+.visited{
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
 
 .sidebar-nav > .sidebar-brand {
     height: 65px;
@@ -98,3 +103,32 @@
     margin: 10%;
     padding: 0;
 }
+h2{
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+.intro{
+    height:100%
+  }
+  
+  .left{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color:#3d231b;
+    height : 100%;
+    color : #FFF;
+  
+  }
+  .right{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color:#FFF;
+    height : 100%;
+    color : #3d231b;
+  }
+ 
