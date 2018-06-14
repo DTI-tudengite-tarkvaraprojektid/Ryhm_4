@@ -5,30 +5,44 @@
 	$pics_count = count($pics);
 ?>
 
-
-
-<table align="center" cellpadding="1" cellspacing="1" class="product" border="1">
+<table cellpadding="1" cellspacing="1" class="product" border="1">
 	<tr>
 		<td valign="top">
-			<?php for ($i=0;$i<$pics_count;$i++){ ?>
-			<div><a href="#"><img src="images/<?php echo $pics[$i];?>" alt="" style="width:250px;/></a></div>
+			<div class="product-name">
+				<h4>
+					<a><?php echo $product['name']?></a>
+				</h4>
+			</div>
+			<div>
+				<img id='i1' src="images/<?php echo $pics[0];?>" alt="" style="width:300px;" /><br />
+			</div>
+			<?php 
+			for ($i=0;$i<$pics_count;$i++)
+			{ ?>
+				<div>
+					<a href="#" onclick="document.getElementById('i1').src='images/<?php echo $pics[$i];?>'"><img src="images/<?php echo $pics[$i];?>" alt="" style="width:150px;" /></a>
+				</div>
 			<?php } ?>
 			<div class="description">
-				<div class="product-name"><a href="#"><?php echo $product['name']?></a></div>
-				<div class="product-price">Price: <?php echo $product['price']?>€</div>
+				<div>
+					<a>Price:</a><a style="color:red"> <?php echo $product['price']?>€</a>
+				</div>
 			</div>
 		</td>
 		<td valign="top">
-			<div><?php echo $product['description']?></div>
+			<h4>
+				<a>Info:</a>
+			</h4><br>
+			<div>
+				<a><?php echo $product['description']?></a>
+			</div>
 		</td>
 	</tr>
 </table>
 
-
- 
  <form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
 	<a><?php echo $product['name']?></a><br><br>
-	<input type="hidden" name="toode" value="<?php echo $product['name']?>" />
+	<input type="hidden" name="toode" value="<?php $product['name']?>" />
 	<a>Vali kiinga suurus</a>
 	<select id="sizeVal" onclick="getValuesSize()">
 		<option value="volvo">Volvo</option>
@@ -48,35 +62,29 @@
 	<a href="#">Vaata kontsa infot siit</a><br><br>
 	<a>Juhul kui teil on mitte standartne jalg, palume täita teie jala mõõdut</a><br>
 	<a>Vasaku jala mõõt 1 (mm):</a>
-	<input type="text" name="Vasaku jala mõõt 1 (mm)"><br>
+	<input type="text" name="Vasaku jala mõõt 1 (mm)"/><br>
 	<a>Vasaku jala mõõt 2 (mm):</a>
-	<input type="text" name="Vasaku jala mõõt 2 (mm)"><br>
+	<input type="text" name="Vasaku jala mõõt 2 (mm)"/><br>
 	<a>Vasaku jala mõõt 3 (mm):</a>
-	<input type="text" name="Vasaku jala mõõt 3 (mm)"><br>
+	<input type="text" name="Vasaku jala mõõt 3 (mm)"/><br>
 	<a>Parema jala mõõt 1 (mm):</a>
-	<input type="text" name="Parema jala mõõt 1 (mm)"><br>
+	<input type="text" name="Parema jala mõõt 1 (mm)"/><br>
 	<a>Parema jala mõõt 2 (mm):</a>
-	<input type="text" name="Parema jala mõõt 2 (mm)"><br>
+	<input type="text" name="Parema jala mõõt 2 (mm)"/><br>
 	<a>Parema jala mõõt 3 (mm):</a>
-	<input type="text" name="Parema jala mõõt 3 (mm)"><br>
+	<input type="text" name="Parema jala mõõt 3 (mm)"/><br>
 	<a href="#">Mõõtmisõpetust vaata siitt</a><br><br>
-	
-	<a>Hind: </a><a><?php echo $product['price']?></a><br>
-	<input type="hidden" name="hind" value="<?php echo $product['price']?>" />
-	<a>Kogus:</a><input type="text" value="1" name="kogus"><br>
-	
-	<a>Nimi:</a>
-	<input type="text" name="name"/><br>
-	<a>Mail:</a>
-	<input type="email" name="_replyto" placeholder="Your email" /> <br>
-	<a>Telefoni number:</a>
-	<input type="text" name="Tel"/><br>
+	<a>Hind: </a><a><?php echo $product['price']?></a><input type="hidden" name="hind" value="<?php echo $product['price']?>" /><br>
+	<a>Kogus:</a><input type="text" value="1" name="kogus"/><br>
+	<a>Nimi:</a><input type="text" name="name"/><br>
+	<a>Mail:</a><input type="email" name="_replyto" placeholder="Your email" /> <br>
+	<a>Telefoni number:</a><input type="text" name="Tel"/><br>
 	
     <input type="hidden" name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" />
     <input type="hidden" name="_subject" value="Tellimine" />
     <input type="hidden" name="_format" value="plain" />
     <input type="text" name="_gotcha" style="display:none" />
-	<input type="submit" value="Send">
+	<input type="submit" value="Send"/>
 	<script>
 		function getValuesKonst() {
     		document.getElementById("konst").value = document.getElementById("konstVal").value;
