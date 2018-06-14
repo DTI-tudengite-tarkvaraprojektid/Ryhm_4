@@ -1,7 +1,7 @@
 <?php
 	include('conn.php');
 	$id=$_GET['id'];
-	$query=mysqli_query($conn,"select * from `users` where userid='$id'");
+	$query=mysqli_query($conn,"select * from `products` where id='$id'");
 	$row=mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
@@ -47,15 +47,27 @@
                 <h2>Muuda</h2>
                 <form method="POST" action="update.php?id=<?php echo $id; ?>">
                     <div class="form-group row">
-                        <label for="example-email-input" class="col-2 col-form-label">kasutaja</label>
+                        <label for="example-email-input" class="col-2 col-form-label">nimetus</label>
                         <div class="col-10">
-                            <input class="form-control" type="text" value="<?php echo $row['username']; ?>" id="example-email-input" name="username">
+                            <input class="form-control" type="text" value="<?php echo $row['name']; ?>" id="example-email-input" name="name">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-email-input" class="col-2 col-form-label">email</label>
+                        <label for="example-email-input" class="col-2 col-form-label">kirjeldus</label>
                         <div class="col-10">
-                            <input class="form-control" type="text" value="<?php echo $row['email']; ?>" id="example-email-input" name="email">
+                            <input class="form-control" type="text" value="<?php echo $row['description']; ?>" id="example-email-input" name="description">
+                        </div>    
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-2 col-form-label">hind</label>
+                        <div class="col-10">
+                            <input class="form-control" type="text" value="<?php echo $row['price']; ?>" id="example-email-input" name="price">
+                        </div>    
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-2 col-form-label">konks</label>
+                        <div class="col-10">
+                            <input class="form-control" type="text" value="<?php echo $row['heel']; ?>" id="example-email-input" name="heel">
                         </div>    
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary" type="button" value="Salvesta">
