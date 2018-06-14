@@ -112,7 +112,7 @@ body {
 
 /*Treeneri nupp*/
 .card .card-body .btn {
-	font-size: 1.2rem;
+	font-size: 1.7rem;
   	font-family: 'Montserrat', sans-serif;
   	font-weight: 400i;
   	color: black;
@@ -138,6 +138,7 @@ body {
   font-weight: 400;
   color: black;
 }
+
 
 /*Tantsututvustused*/
 #tantsud h2 {
@@ -291,7 +292,7 @@ body {
 }
 
 .fa-css3 {
-  color: #0057CC;
+  color: #2163af;
 }
 
 .fa-code, .fa-bold, .fa-css3 {
@@ -546,16 +547,12 @@ figure {
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
-
 Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
-
 Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
-
 Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
-
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
