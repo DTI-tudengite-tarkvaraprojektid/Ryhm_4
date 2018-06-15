@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
+	<link href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
 	<script>
 		
 		function collapsePanels(){
@@ -36,21 +36,21 @@
 </div>
 
 <!--- Tantsumeka -->
-<div class="container-fluid padding">
-<div class="row welcome text-center padding">
+<div class="container-fluid col-lg-10">
+<div class="row welcome">
 	<div class="col-12">
-		<h1 class="display-4">TANTSUMEKA</h1>
+		<h1 class="display-4 text-center">TANTSUMEKA</h1>
 	</div>
 	<hr>
 	<div class="col-12">
-		<p class="moto">Tants aitab elust rõõmu tunda!</p>
+		<p class="moto text-center">Tants aitab elust rõõmu tunda!</p>
 	</div>
 </div>
 </div>
 
 <!--Tutvustus põhjalik-->
 <div class="container-fluid col-lg-10">
-<div class="row padding">
+<div class="row">
 	<div class="col-lg-6 about-1">
 		<p>Tantsumeka on loodud 2011. aastal ja välja kasvanud Ants Taela legendaarsest Taela Tantsukoolist, mis tegutses 1965-2011 Mustpeade Majas. Tantsumeka eesmärgiks on olla sõltumatu tantsukeskus Eestis ning teha tantsualast koostööd rahvusvahelisel tasemel. Tantsumeka on avatud kõikidele tantsuhuvilistele, nii algajatele, edasijõudnutele kui ka professionaalsetele tantsijatele, arendamaks oma tantsualaseid oskusi.</p>
 	</div>
@@ -73,7 +73,7 @@
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/atreener1.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener1.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener1" aria-expanded="false" aria-controls="treener1">
 				<h2 class="card-title text-center">Matis Toome</h2></a>
                 <div class="collapse" id="treener1">
@@ -88,7 +88,7 @@ Tantsumeka juht ja tantsuõpetaja Matis Toome on tegelenud võistlustantsuga ül
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/treener2.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/treener2.jpg">
 				
 				<h2 class="card-title text-center">Liina-Liis Liiv-Toome</h2>
 				<div class="collapse" id="treener2">
@@ -103,7 +103,7 @@ Liina-Liis Liiv-Toome on Tantsumeka asutajaliige ja üks tantsukooli eestvedajat
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/atreener3.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener3.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener3" aria-expanded="false" aria-controls="treener3">
 				<h2 class="card-title text-center">Käthe Kobin</h2></a>
 				<div class="collapse" id="treener3">
@@ -119,7 +119,7 @@ Käthe Kobin on tegelenud tantsuga peaaegu kogu oma elu, alustades 4. aastasena 
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/atreener4.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener4.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener4" aria-expanded="false" aria-controls="treener4">
 				<h2 class="card-title text-center">Elery Kiviberg</h2></a>
 				<div class="collapse" id="treener4">
@@ -135,7 +135,7 @@ Elery Kiviberg alustas treeninguid lapsepõlves kujundrulluisutajana. Armastus v
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/atreener5.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener5.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener5" aria-expanded="false" aria-controls="treener5">
 				<h2 class="card-title text-center">Anna Kustova</h2></a>
 				<div class="collapse" id="treener5">
@@ -151,7 +151,7 @@ Anna Kustova on tegelenud võistlustantsuga alates 7. eluaastast. Kogu tema tant
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/atreener6.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener6.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener6" aria-expanded="false" aria-controls="treener6">
 				<h2 class="card-title text-center">Timo Alavere</h2></a>
 				<div class="collapse" id="treener6">
@@ -174,7 +174,9 @@ Timo Alavere on tegelenud võistlustantsuga 9 aastat ning õppinud Matis Toome, 
 <!--Tantsustiilid-->
 <section id="tantsud" class="clean-block clean-info dark">
     <div class="container-fluid col-lg-10 tabl-heading padding">
-        <h2 class="text-center">Tantsututvustused</h2>
+    	<div class="col-12" id="tantsud">
+			<h2 class="text-center">Tantsututvustused</h2>
+		</div>
             <ul class="nav nav-tabs text-center">
                 <li class="nav-item tabl"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Aeglane valss</a></li>
                 <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Tango</a></li>

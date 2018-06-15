@@ -22,6 +22,10 @@ body {
    padding-top: 110px;
 }
 
+.treener-pilt {
+  border-radius: 4px;
+}
+
 #wrapper {
   min-height:100%;
   position: relative;
@@ -388,7 +392,7 @@ hr.light-100 {
 
 @media (max-width: 1200px) {
   .nav-link{
-  font-size: 1em !important;
+  font-size: 1.1rem !important;
   font-weight: 600;
 }
   .dropdown-menu a{
@@ -396,19 +400,61 @@ hr.light-100 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
   }
+  .welcome h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: black;
+  }
+    .moto {
+    font-size: 2.25rem;
+  }
+  .about-1 p {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.about-1 h3 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+#tantsud h2 {
+  font-size: 2.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.tabl a{
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.tab-pane #tabp{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+.
 }
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .social {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     padding: 0.9rem;
   }
 
   .social-info {
-    font-size: 1.0em;
+    font-size: 1.0rem;
   }
   .dropdown-menu a{
-   font-size: 1rem;
+   font-size: 1.1rem;
    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
   }
@@ -420,12 +466,12 @@ hr.light-100 {
 }
 
 .social {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     padding: 0.9rem;
   }
 
 .social-info {
-    font-size: 1.0em;
+    font-size: 1.0rem;
 }
 .dropdown-menu a{
    font-size: 1rem;
@@ -439,11 +485,11 @@ hr.light-100 {
 }
 
 .social {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   padding: .8rem;
 }
 .social-info {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 .welcome h1 {
   font-size: 2rem;
@@ -490,7 +536,7 @@ hr.light-100 {
   color: black;
 }
 .tab-pane #tabp{
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: black;

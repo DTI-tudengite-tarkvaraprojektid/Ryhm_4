@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="https://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
+	<link href="https://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
 	<script>
 		function hideHeaderText() {
     		var x = document.getElementById("tutvustus");
@@ -36,23 +36,20 @@
 
 
 <section id="algkursus">
-<div class="container-fluid padding">
+<div class="container-fluid col-lg-5 col-md-8 col-sm-10 padding">
 <div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-	<div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Algkursus</h3>
+	<div class="about-1">
+		<div class="col-12" id="tantsud">
+			<h2 class="text-center">Algkursus</h2>
+		</div>
 		<p>Seltskonnatantsu ALGKURSUS on mõeldud neile, kel puudub tantsuoskus või, kes on tantsukursustel õpitust palju unustanud. Algkursustel taastate või omandate esmase hädavajaliku tantsuoskuse kaheksas tantsus: fokstrot, aeglane valss, valss, tango, samba, rumba, jive ja cha cha cha.</p> 
 		<p class="display-4">
-ALGKURSUS KEVADEL esmaspäeviti kl 20:00-21:30
-<br>
-Rocca al Mare Koolis (Vabaõhumuuseumi tee 8)
-26.03.2018 - 14.05.2018 (8 korda)
-Maksumus paarile: 160 €
+ALGKURSUS KEVADEL esmaspäeviti kl 20:00-21:30<br>
+Rocca al Mare Koolis (Vabaõhumuuseumi tee 8)<br>
+26.03.2018 - 14.05.2018 (8 korda)<br>
+Maksumus paarile: 160 €<br>
 		</p>
 	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
 </div>
 </div>	
 </section>
