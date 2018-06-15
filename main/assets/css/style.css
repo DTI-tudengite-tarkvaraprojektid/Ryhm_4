@@ -170,7 +170,16 @@ body {
   color: black;
 }
 
+/*.ahref{
+  word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
 
+
+}*/
 .card-body {
   background-color: #fff4b3;
   border: 0px solid black;
@@ -178,10 +187,11 @@ body {
 
 /*Pood*/
 .shop-btn .btn-primary1{
-  background-color: #fff4b3;
-  border: 0px solid black;
-  border-radius: 0px;
+  
+  
 }
+
+
 
 .btn-primary1:focus,.btn-primary1:active {
    outline: none !important;
@@ -193,6 +203,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: black;
+  word-wrap:break-word
+}
+#shop-menu:hover {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  
+  background-color: #fff4b3;
+  
+  
+  
 }
 
 .nav-tabs .nav-link:focus,
@@ -364,7 +385,9 @@ hr.light {
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
-
+a {
+  word-wrap: break-word;
+}
 
 hr.light-100 {
   border-top: 1px solid #d5d5d5;

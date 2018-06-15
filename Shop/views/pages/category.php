@@ -14,7 +14,7 @@
 		{
 			foreach($categories as $item){
 ?> 	<!--toodete lingid-->
-			<div class="col-lg-2 tants1">
+			<div class="col-lg-4 tants1">
 				<div class="shop-btn">
 					<div class="btn btn-block btn-primary1">
 						<a href="?&view=cat&page=0&id=<?php echo $item['cat_id'];?>" class="btn btn-block" id="shop-menu"><?php echo $item['name'];?></a>
