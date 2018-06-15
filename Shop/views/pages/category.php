@@ -13,11 +13,12 @@
 		if(isset($_GET['sex']))
 		{
 			foreach($categories as $item){
-		?> 	<!--toodete lingid-->
-			<div class="col-lg-2 tants1">
+?> 	<!--toodete lingid-->
+			<div class="col-lg-4 col-md-6 tants1">
 				<div class="shop-btn">
 					<div class="btn btn-block btn-primary1">
 						<a href="?&view=cat&page=0&id=<?php echo $item['cat_id'];?>" class="btn btn-block" id="shop-menu"><?php echo $item['name'];?></a>
+						<img src="https://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/Shop/images/1.png"  class="img-fluid" alt="Responsive image">
 					</div>
 				</div>
 			</div>
