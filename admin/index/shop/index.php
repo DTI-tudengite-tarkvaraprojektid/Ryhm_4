@@ -56,6 +56,9 @@
                     <a href="../users">Kasutajad</a>
                 </li>
                 <li>
+                    <a href="../content">Sisu</a>
+                </li>
+                <li>
                     <a href="?logout=1">Logi välja</a>
                 </li>
             </ul>
@@ -63,11 +66,11 @@
         <div id="page-content-wrapper">
             <div class="row">
                 <div class="col-lg-12"
-                    <section class="intro">
+                    <section>
                         <row>
-                            <div class="col-lg-6 col-sm-12 left">
+                            <div class="col-12">
                                 <div>
-                                    <form method="POST" action="add.php">
+                                    <form method="POST" action="add.php" enctype='multipart/form-data'>
                                         <div class="form-group row">
                                             <label for="example-email-input" class="col-2 col-form-label">nimetus</label>
                                             <div class="col-10">
@@ -77,7 +80,7 @@
                                         <div class="form-group row">
                                             <label for="example-text-input" class="col-2 col-form-label">Kirjeldus</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="" id="example-text-input" name="description">
+                                                <textarea class="form-control" type="text" value="" id="example-text-input" name="description" rows="3"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -86,20 +89,67 @@
                                                 <input class="form-control" type="text" value="" id="example-text-input" name="price">
                                             </div>
                                         </div>
-                                        <input type="submit" name="add" value="Lisa" class="btn btn-dark">
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label" for="category">kategooria</label>
+                                            <div class="col-10">
+                                                <select name="category" class="form-control">
+                                                    <option value="m_s">Meeste standardtants </option>
+                                                    <option value="m_l">Meeste Ladina</option>
+                                                    <option value="m_s">Meeste standardtants </option>
+                                                    <option value="m_l">Meeste ladina</option>
+                                                    <option value="m_h">Meeste harrastustants</option>
+                                                    <option value="m_a">Meeste argentiina tango</option>
+                                                    <option value="m_t">Meeste treeninguks</option>
+                                                    <option value="m_p">Meeste pidulikud</option>
+                                                    <option value="n_s">Naise standardtants </option>
+                                                    <option value="n_l">Naise ladina</option>
+                                                    <option value="n_h">Naise harrastustants</option>
+                                                    <option value="n_a">Naise argentiina tango</option>
+                                                    <option value="n_t">Naise treeninguks</option>
+                                                    <option value="n_p">Naise pidulikud</option>
+                                                    <option value="l">Lastele</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label" for="heel">konts</label>
+                                            <div class="col-10">
+                                                <select name="heel" class="form-control">
+                                                    <option value="5cm peenkonts">5cm peenkonts</option>
+                                                    <option value="7cm peenkonts">7cm peenkonts</option>
+                                                    <option value="8cm peenkonts">8cm peenkonts</option>
+                                                    <option value="5cm alt laienev konst">5cm alt laienev konst</option>
+                                                    <option value="7cm alt laienev konst">7cm alt laienev konst</option>
+                                                    <option value="8cm alt laienev konst">8cm alt laienev konst</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label" for="exampleInputFile">File input</label>
+                                            <div class="col-10">
+                                                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" name="file">
+                                                <small id="fileHelp" class="form-text text-muted">Lubatud on jpg, jpeg ja png failid.</small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-10"></div>
+                                            <div class="col-2">
+                                                <input type="submit" name="add" value="Lisa" class="btn btn-block" style="border-radius: 4px; background-color:black; color:white;">
+                                            </div>
+                                        </div>                                      
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-12 right">
-                                <div>
+                            <div class="col-12">
+                                <div class="table-responsive">
                                     <table class="table">
                                         <thead class="thead-dark">
-                                            <th scope="col">nimetus</th>
-                                            <th scope="col">kirjeldus</th>
-                                            <th scope="col">hind</th>
-                                            <th scope="col">kategooria</th>
-                                            <th scope="col">koks</th>
-                                            <th scope="col"></th>
+                                            <th scope="col" style="width: 10%">nimetus</th>
+                                            <th scope="col" style="width: 30%">kirjeldus</th>
+                                            <th scope="col" style="width: 5%">hind</th>
+                                            <th scope="col" style="width: 5%">kategooria</th>
+                                            <th scope="col" style="width: 30%">koks</th>
+                                            <th scope="col" style="width: 15%"></th>
                                         </thead>
                                         <tbody>
                                             <?php

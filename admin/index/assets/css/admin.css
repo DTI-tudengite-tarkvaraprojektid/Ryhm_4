@@ -10,7 +10,7 @@
 
 #page-content-wrapper {
     width: 100%;
-    padding: 20px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -110,21 +110,4 @@ h2{
 }
 
 
-.intro{
-    height:100%
-  }
-  
-  .left{
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    height : 100%;
-  
-  }
-  .right{
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    height : 100%;
-  }
  

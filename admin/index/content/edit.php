@@ -1,7 +1,7 @@
 <?php
 	include('conn.php');
 	$id=$_GET['id'];
-	$query=mysqli_query($conn,"select * from `users` where userid='$id'");
+	$query=mysqli_query($conn,"select * from `WebContent` where postid='$id'");
 	$row=mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
@@ -35,8 +35,11 @@
                     <li>
                         <a href="../galery">Galerii</a>
                     </li>
-                    <li class="visited">
-                        <a href="">Kasutajad</a>
+                    <li>
+                        <a href="../users">Kasutajad</a>
+                    </li>
+                    <li  class="visited">
+                        <a href="">Sisu</a>
                     </li>
                     <li>
                         <a href="?logout=1">Logi välja</a>
@@ -53,15 +56,15 @@
                                         <h2>Muuda</h2>
                                         <form method="POST" action="update.php?id=<?php echo $id; ?>">
                                             <div class="form-group row">
-                                                <label for="example-email-input" class="col-2 col-form-label">kasutaja</label>
+                                                <label for="example-email-input" class="col-2 col-form-label">Pealkiri</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="text" value="<?php echo $row['username']; ?>" id="example-email-input" name="username">
+                                                    <input class="form-control" type="text" value="<?php echo $row['heading']; ?>" id="example-email-input" name="heading">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="example-email-input" class="col-2 col-form-label">email</label>
+                                                <label for="example-email-input" class="col-2 col-form-label">Sisu</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="text" value="<?php echo $row['email']; ?>" id="example-email-input" name="email">
+                                                    <textarea class="form-control" type="text"  id="example-text-input" name="content" rows="4"><?php  echo $row['content']; ?></textarea>
                                                 </div>    
                                             </div>
                                             <input type="submit" name="submit" class="btn btn-primary" type="button" value="Salvesta">

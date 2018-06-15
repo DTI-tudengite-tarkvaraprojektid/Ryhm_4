@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <br>
-                    <li>
+                    <li class="visited">
                         <a href="../shop">Pood</a>
                     </li>
                     <li>
@@ -35,7 +35,7 @@
                     <li>
                         <a href="../galery">Galerii</a>
                     </li>
-                    <li class="visited">
+                    <li>
                         <a href="">Kasutajad</a>
                     </li>
                     <li>
@@ -44,35 +44,76 @@
                 </ul>
             </div>
             <div id="page-content-wrapper">
-                <h2>Muuda</h2>
-                <form method="POST" action="update.php?id=<?php echo $id; ?>">
-                    <div class="form-group row">
-                        <label for="example-email-input" class="col-2 col-form-label">nimetus</label>
-                        <div class="col-10">
-                            <input class="form-control" type="text" value="<?php echo $row['name']; ?>" id="example-email-input" name="name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-email-input" class="col-2 col-form-label">kirjeldus</label>
-                        <div class="col-10">
-                            <input class="form-control" type="text" value="<?php echo $row['description']; ?>" id="example-email-input" name="description">
-                        </div>    
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-email-input" class="col-2 col-form-label">hind</label>
-                        <div class="col-10">
-                            <input class="form-control" type="text" value="<?php echo $row['price']; ?>" id="example-email-input" name="price">
-                        </div>    
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-email-input" class="col-2 col-form-label">konks</label>
-                        <div class="col-10">
-                            <input class="form-control" type="text" value="<?php echo $row['heel']; ?>" id="example-email-input" name="heel">
-                        </div>    
-                    </div>
-                    <input type="submit" name="submit" class="btn btn-primary" type="button" value="Salvesta">
-                    <a href="index.php"  type="button" class="btn btn-dark" role="button">tagasi</a>    
-                </form>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section>
+                            <row>
+                                <div class="col-12">
+                                    <div>
+                                        <h2>Muuda</h2>
+                                        <form method="POST" action="update.php?id=<?php echo $id; ?>">
+                                            <div class="form-group row">
+                                                <label for="example-email-input" class="col-2 col-form-label">nimetus</label>
+                                                <div class="col-10">
+                                                    <input class="form-control" type="text" value="<?php echo $row['name']; ?>" id="example-email-input" name="name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-2 col-form-label">kirjeldus</label>
+                                                <div class="col-10">
+                                                    <textarea class="form-control" type="text"  id="example-text-input" name="description" rows="3"><?php echo $row['description']; ?></textarea>
+                                                </div>    
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-email-input" class="col-2 col-form-label">hind</label>
+                                                <div class="col-10">
+                                                    <input class="form-control" type="number" value="<?php echo $row['price']; ?>" id="example-email-input" name="price">
+                                                </div>    
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-2 col-form-label" for="category">kategooria</label>
+                                                <div class="col-10">
+                                                    <select name="category" class="form-control" id="category">
+                                                        <option <?php if($row['category'] == 'm_s'){echo("selected");} ?> value="m_s">Meeste standardtants </option>
+                                                        <option <?php if($row['category'] == 'm_l'){echo("selected");} ?> value="m_l">Meeste Ladina</option>
+                                                        <option <?php if($row['category'] == 'm_S'){echo("selected");} ?> value="m_s">Meeste standardtants </option>
+                                                        <option <?php if($row['category'] == 'm_l'){echo("selected");} ?> value="m_l">Meeste ladina</option>
+                                                        <option <?php if($row['category'] == 'm_h'){echo("selected");} ?> value="m_h">Meeste harrastustants</option>
+                                                        <option <?php if($row['category'] == 'm_a'){echo("selected");} ?> value="m_a">Meeste argentiina tango</option>
+                                                        <option <?php if($row['category'] == 'm_t'){echo("selected");} ?> value="m_t">Meeste treeninguks</option>
+                                                        <option <?php if($row['category'] == 'm_p'){echo("selected");} ?> value="m_p">Meeste pidulikud</option>
+                                                        <option <?php if($row['category'] == 'n_s'){echo("selected");} ?> value="n_s">Naise standardtants </option>
+                                                        <option <?php if($row['category'] == 'n_l'){echo("selected");} ?> value="n_l">Naise ladina</option>
+                                                        <option <?php if($row['category'] == 'n_h'){echo("selected");} ?> value="n_h">Naise harrastustants</option>
+                                                        <option <?php if($row['category'] == 'n_a'){echo("selected");} ?> value="n_a">Naise argentiina tango</option>
+                                                        <option <?php if($row['category'] == 'n_t'){echo("selected");} ?> value="n_t">Naise treeninguks</option>
+                                                        <option <?php if($row['category'] == 'n_p'){echo("selected");} ?> value="n_p">Naise pidulikud</option>
+                                                        <option <?php if($row['category'] == 'l'){echo("selected");} ?> value="l">Lastele</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-2 col-form-label" for="heel">konts</label>
+                                                <div class="col-10">
+                                                    <select name="heel" class="form-control">
+                                                        <option value="5cm peenkonts" <?php if($row['heel'] == '5cm peenkonts'){echo("selected");} ?>>5cm peenkonts</option>
+                                                        <option value="7cm peenkonts" <?php if($row['heel'] == '7cm peenkonts'){echo("selected");} ?>>7cm peenkonts</option>
+                                                        <option value="8cm peenkonts" <?php if($row['heel'] == '8cm peenkonts'){echo("selected");} ?>>8cm peenkonts</option>
+                                                        <option value="5cm alt laienev konst" <?php if($row['heel'] == '5cm alt laienev konst'){echo("selected");} ?>>5cm alt laienev konst</option>
+                                                        <option value="7cm alt laienev konst" <?php if($row['heel'] == '7cm alt laienev konst'){echo("selected");} ?>>7cm alt laienev konst</option>
+                                                        <option value="8cm alt laienev konst" <?php if($row['heel'] == '8cm alt laienev konst'){echo("selected");} ?>>8cm alt laienev konst</option>
+                                                    </select>
+                                                </div>
+                                            </div>           
+                                            <input type="submit" name="submit" class="btn btn-primary" type="button" value="Salvesta">
+                                            <a href="index.php"  type="button" class="btn btn-dark" role="button">tagasi</a>    
+                                        </form>
+                                    </div>
+                                </div>
+                            </row>
+                        </section>
+                    </div>  
+                </div>
             </div>
         </div>
     </body>

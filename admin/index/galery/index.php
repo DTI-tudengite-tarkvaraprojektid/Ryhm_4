@@ -56,6 +56,9 @@
                         <a href="../users">Kasutajad</a>
                     </li>
                     <li>
+                        <a href="../content">Sisu</a>
+                    </li>
+                    <li>
                         <a href="?logout=1">Logi välja</a>
                     </li>
                 </ul>

@@ -49,11 +49,11 @@
                 <li>
                     <a href="../galery">Galerii</a>
                 </li>
-                <li class="visited">
-                    <a href="">Kasutajad</a>
-                </li>
                 <li>
-                    <a href="../content">Sisu</a>
+                    <a href="../users">Kasutajad</a>
+                </li>
+                <li  class="visited">
+                    <a href="">Sisu</a>
                 </li>
                 <li>
                     <a href="?logout=1">Logi välja</a>
@@ -67,54 +67,25 @@
                         <row>
                             <div class="col-12">
                                 <div>
-                                    <form method="POST" action="add.php">
-                                        <div class="form-group row">
-                                            <label for="example-email-input" class="col-2 col-form-label">Email</label>
-                                            <div class="col-10">
-                                                <input class="form-control" type="email" value="" id="example-email-input" name="email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">Nimi</label>
-                                            <div class="col-10">
-                                                <input class="form-control" type="text" value="" id="example-text-input" name="username">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="example-password-input" class="col-2 col-form-label">Parool</label>
-                                            <div class="col-10">
-                                                <input class="form-control" type="password" value="" id="example-password-input" name="password">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-10"></div>
-                                            <div class="col-2">
-                                                <input type="submit" name="add" value="Lisa" class="btn btn-block" style="border-radius: 4px; background-color:black; color:white;">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div>
                                     <table class="table">
                                         <thead class="thead-dark">
-                                            <th scope="col">kasutaja</th>
-                                            <th scope="col">email</th>
+                                            <th scope="col">Asukoht</th>
+                                            <th scope="col">Pealkiri</th>
+                                            <th scope="col">Sisu</th>
                                             <th scope="col"></th>
                                         </thead>
                                         <tbody>
                                             <?php
                                                 include('conn.php');
-                                                $query=mysqli_query($conn,"select * from `users`");
+                                                $query=mysqli_query($conn,"select * from `WebContent`");
                                                 while($row=mysqli_fetch_array($query)){
                                                     ?>
                                                     <tr>
-                                                        <td><?php echo $row['username']; ?></td>
-                                                        <td><?php echo $row['email']; ?></td>
+                                                        <td><?php echo $row['location']; ?></td>
+                                                        <td><?php echo $row['heading']; ?></td>
+                                                        <td><?php echo $row['content']; ?></td>
                                                         <td>
-                                                            <a type="button" role="button" class="btn btn-primary" href="edit.php?id=<?php echo $row['userid']; ?>">Muuda</a>
-                                                            <a type="button" role="button" class="btn btn-danger" href="delete.php?id=<?php echo $row['userid']; ?>">Kustuta</a>
+                                                            <a type="button" role="button" class="btn btn-primary" href="edit.php?id=<?php echo $row['postid']; ?>">Muuda</a>
                                                         </td>
                                                     </tr>
                                                         <?php
