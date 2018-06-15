@@ -18,7 +18,7 @@
 				<div class="shop-btn">
 					<div class="btn btn-block btn-primary1">
 						<a href="?&view=cat&page=0&id=<?php echo $item['cat_id'];?>" class="btn btn-block" id="shop-menu"><?php echo $item['name'];?></a>
-						<img src="https://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/Shop/images/1.png"  class="img-fluid" alt="Responsive image">
+						<a href="?&view=cat&page=0&id=<?php echo $item['cat_id'];?>"><img src="images_shop/<?php echo $item['cat_id'];?>.png"  class="img-fluid" alt="Responsive image"></a>
 					</div>
 				</div>
 			</div>
