@@ -9,115 +9,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
 	<script>
-		function hideHeaderText() {
-    		var x = document.getElementById("tutvustus");
-    	     x.style.display = "none";
-			 $("#navbarResponsive").attr("class","navbar-collapse collapse")
-    	}
-
-		function showHeaderText() {
-    		var x = document.getElementById("tutvustus");
-    	     x.style.display = "block";
-    	}
+		
 		function collapsePanels(){
 			jQuery('.collapse').collapse('hide');
 		}
+
 	</script>
 </head>
 <body>
 <div id="wrapper">
 <!-- Navigation -->
-<header id="topofpage">
-<nav class="navbar navbar-expand-lg d-flex navbar-light bg-logo fixed-top">
-<div class="container">
-	<a class="navbar-brand logo" href="#tutvustus" target="_self" style="background-image:url(&quot;assets/img/tantsumeka_hele.png&quot;);" onclick="showHeaderText()"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item dropdown">
-			    <a class="nav-link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #ffef8f;">KURSUSED</a>
-			    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			     <a class="dropdown-item" href="#algkursus" target="_self" onclick="hideHeaderText()">Algkursus</a>
-			      <a class="dropdown-item" href="#jatkukursus" target="_self" onclick="hideHeaderText()">Jätkukursus</a>
-			      <a class="dropdown-item" href="#edasijoudnud" target="_self" onclick="hideHeaderText()">Edasijõudnute kursus</a>
-			      <a class="dropdown-item" href="#kursused_calendar" target="_self" onclick="hideHeaderText()">Kalender</a>
-			      <a class="dropdown-item" href="#kursus_registration" target="_self" onclick="hideHeaderText()">Registreerimine</a>
-			    </div>
-			</li>
-			<li class="nav-item dropdown">
-			    <a class="nav-link"  data-toggle="dropdown" href="#" style="color: #ffef8f;">HOBITANTS</a>
-			    <div class="dropdown-menu">
-			      <a class="dropdown-item" href="#hobiklubi" target="_self" onclick="hideHeaderText()">Hobiklubi</a>
-			      <a class="dropdown-item" href="#hobitants_calendar" target="_self">Kalender</a>
-			      <a class="dropdown-item" href="#" target="_self">Registreerimine</a>
-			    </div>
-			</li>
-			<li class="nav-item dropdown">
-			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">VÕISTLUSTANTS</a>
-			    <div class="dropdown-menu">
-			      <a class="dropdown-item" href="#voistlustants" target="_self">Võistlusttants täiskasvanutele</a>
-			      <a class="dropdown-item" href="#voistlustants_calendar" target="_self">Kalender</a>
-			      <a class="dropdown-item" href="#" target="_self">Registreerimine</a>
-			    </div>
-			</li>
-			<li class="nav-item dropdown">
-			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">ERATUNNID</a>
-			    <div class="dropdown-menu">
-			      <a class="dropdown-item" href="#" target="_self">Pulmatants</a>
-			      <a class="dropdown-item" href="#" target="_self">Seltskonnatants</a>
-			      <a class="dropdown-item" href="#" target="_self">Võistlustants</a>
-			      <a class="dropdown-item" href="#" target="_self">Kalender</a>
-			      <a class="dropdown-item" href="#" target="_self">Registreerimine</a>
-			    </div>
-			</li>
-			<li class="nav-item dropdown">
-			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">TANTSUTARBED</a>
-			    <div class="dropdown-menu">
-			      <a class="dropdown-item" href="#" target="_self">Tantsukingad</a>
-			      <a class="dropdown-item" href="#" target="_self">Tantsurõivad</a>
-			    </div>
-			</li>
-			<li class="nav-item dropdown">
-			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">LISAKS</a>
-			    <div class="dropdown-menu">
-			      <a class="dropdown-item" href="#" target="_self">Galerii</a>
-			      <a class="dropdown-item" href="#" target="_self">Kontakt</a>
-			      <a class="dropdown-item" href="#" target="_self">Something else here</a>
-			    </div>
-			</li>
-		</ul>
-	</div>
-</div>
-</nav>
+
+<?php
+	require("header.php");
+?>
+
 <section id="tutvustus">
 <div class="video-header wrap">
 	<div class="fullscreen-video-wrap active">
 		<video autoplay muted loop id="myVideo">
-			<source src="assets/video/video3.mp4" type="video/mp4">
+			<source src="assets/video/video.mp4" type="video/mp4">
 		</video>
 	</div>
 </div>
 
 <!--- Tantsumeka -->
-<div class="container-fluid padding">
-<div class="row welcome text-center padding">
+<div class="container-fluid col-lg-10">
+<div class="row welcome">
 	<div class="col-12">
-		<h1 class="display-4">TANTSUMEKA</h1>
+		<h1 class="display-4 text-center">TANTSUMEKA</h1>
 	</div>
 	<hr>
 	<div class="col-12">
-		<p class="moto">Tants aitab elust rõõmu tunda!</p>
+		<p class="moto text-center">Tants aitab elust rõõmu tunda!</p>
 	</div>
 </div>
 </div>
 
 <!--Tutvustus põhjalik-->
 <div class="container-fluid col-lg-10">
-<div class="row padding">
+<div class="row">
 	<div class="col-lg-6 about-1">
 		<p>Tantsumeka on loodud 2011. aastal ja välja kasvanud Ants Taela legendaarsest Taela Tantsukoolist, mis tegutses 1965-2011 Mustpeade Majas. Tantsumeka eesmärgiks on olla sõltumatu tantsukeskus Eestis ning teha tantsualast koostööd rahvusvahelisel tasemel. Tantsumeka on avatud kõikidele tantsuhuvilistele, nii algajatele, edasijõudnutele kui ka professionaalsetele tantsijatele, arendamaks oma tantsualaseid oskusi.</p>
 	</div>
@@ -140,7 +73,7 @@
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/treener1.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener1.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener1" aria-expanded="false" aria-controls="treener1">
 				<h2 class="card-title text-center">Matis Toome</h2></a>
                 <div class="collapse" id="treener1">
@@ -155,7 +88,7 @@ Tantsumeka juht ja tantsuõpetaja Matis Toome on tegelenud võistlustantsuga ül
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/treener2.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/treener2.jpg">
 				
 				<h2 class="card-title text-center">Liina-Liis Liiv-Toome</h2>
 				<div class="collapse" id="treener2">
@@ -170,7 +103,7 @@ Liina-Liis Liiv-Toome on Tantsumeka asutajaliige ja üks tantsukooli eestvedajat
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/treener3.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener3.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener3" aria-expanded="false" aria-controls="treener3">
 				<h2 class="card-title text-center">Käthe Kobin</h2></a>
 				<div class="collapse" id="treener3">
@@ -186,7 +119,7 @@ Käthe Kobin on tegelenud tantsuga peaaegu kogu oma elu, alustades 4. aastasena 
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/treener4.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener4.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener4" aria-expanded="false" aria-controls="treener4">
 				<h2 class="card-title text-center">Elery Kiviberg</h2></a>
 				<div class="collapse" id="treener4">
@@ -202,7 +135,7 @@ Elery Kiviberg alustas treeninguid lapsepõlves kujundrulluisutajana. Armastus v
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/treener5.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener5.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener5" aria-expanded="false" aria-controls="treener5">
 				<h2 class="card-title text-center">Anna Kustova</h2></a>
 				<div class="collapse" id="treener5">
@@ -218,7 +151,7 @@ Anna Kustova on tegelenud võistlustantsuga alates 7. eluaastast. Kogu tema tant
 	<div class="col-lg-3 col-md-6">
 		<div class="card">
 			<div class="card-body">
-				<img class="card-img-top" src="assets/img/treenerid/treener6.jpg">
+				<img class="card-img-top treener-pilt" src="assets/img/treenerid/atreener6.jpg">
 				<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener6" aria-expanded="false" aria-controls="treener6">
 				<h2 class="card-title text-center">Timo Alavere</h2></a>
 				<div class="collapse" id="treener6">
@@ -241,7 +174,9 @@ Timo Alavere on tegelenud võistlustantsuga 9 aastat ning õppinud Matis Toome, 
 <!--Tantsustiilid-->
 <section id="tantsud" class="clean-block clean-info dark">
     <div class="container-fluid col-lg-10 tabl-heading padding">
-        <h2 class="text-center">Tantsututvustused</h2>
+    	<div class="col-12" id="tantsud">
+			<h2 class="text-center">Tantsututvustused</h2>
+		</div>
             <ul class="nav nav-tabs text-center">
                 <li class="nav-item tabl"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Aeglane valss</a></li>
                 <li class="nav-item tabl"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Tango</a></li>
@@ -348,284 +283,11 @@ Arvatakse , et termin on just sellest laulust võetud kasutusele alates  1953.a.
 </section>
 </section>
 </header>
-<main>
-<!---  KURSUSED beginning -->
 
-<section id="algkursus">
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-	<div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Algkursus</h3>
-		<p>Seltskonnatantsu ALGKURSUS on mõeldud neile, kel puudub tantsuoskus või, kes on tantsukursustel õpitust palju unustanud. Algkursustel taastate või omandate esmase hädavajaliku tantsuoskuse kaheksas tantsus: fokstrot, aeglane valss, valss, tango, samba, rumba, jive ja cha cha cha.</p> 
-		<p>
-ALGKURSUS KEVADEL esmaspäeviti kl 20:00-21:30<br>
-Rocca al Mare Koolis (Vabaõhumuuseumi tee 8)<br>
-26.03.2018 - 14.05.2018 (8 korda)<br>
-Maksumus paarile: 170 €<br>
-		</p>
-	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-</div>
-</div>	
-</section>
-
-<section id="jatkukursus">				
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-	<div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Jätkukursus</h3>
-		<p>JÄTKUKURSUS on niiöelda algkursuse pikendus ja sobib neile, kes soovivad oma tantsuoskust lihvida ja mõned tantsusammud juurde õppida. Põhitantsud on samad. Lisaks õpime buggi.</p> 
-		<p>
-JÄTKUKURSUS KEVADEL neljapäeviti kl 18:30-20:00<br>
-Haabersti Vene Gümnaasiumis (Õismäe tee 132)<br>
-22.03.2018 - 17.05.2018 (9 korda)<br>
-Maksumus paarile: 180 €<br>
-		</p>
-	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-</div>
-</div>
-</section>
-
-<section id="edasijoudnud">				
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-	<div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Edasijõudnute kursus</h3>
-		<p>EDASIJÕUDNUTE KURSUS on veel üks võimalus jätkata tantsu õppimist. Need kursused on hoojapõhised ja kestavad sügisest kevadeni. Sealt edasi saab liikuda hobiklubisse.</p>
-		<p>
-EDASIJÕUDNUTE KURSUS KEVADEL neljapäeviti kl 20:00-21:30<br>
-Haabersti Vene Gümnaasiumis (Õismäe tee 132)<br>
-22.03.2018 - 17.05.2018 (9 korda)<br>
-Maksumus paarile: 171 €<br>
-		</p>
-	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-</div>
-</div>	
-</section>
-<!---  KALENDRID!!!!! -->
-<section  id="kursused_calendar">				
-<div class="container-fluid padding d-none d-sm-block">
-<div class="row padding">
-	<div class="col-xl-2 col-lg-2 col-md-1">
-    </div>
-	<div class="col-xl-8 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Kalender</h3>
-		<div class="googleCalendar text-center">
-              <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
-		</div>
-	</div>
-	<div class="col-xl-2 col-lg-2 col-md-1">
-    </div>
-</div>
-</div>
-	<div class="container-fluid padding d-block d-sm-none">
-	<div class="row padding">
-		<div class="col-xl-2 col-lg-2 col-md-1">
-		</div>
-		<div class="col-xl-8 col-lg-8 col-md-10 about-1">
-			<h3 class="display-4 text-center">Kalender</h3>
-			<div class="googleCalendar text-center">
-				  <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</div>
-		<div class="col-xl-2 col-lg-2 col-md-1">
-		</div>
-	</div>
-	</div>
-</section>
-
-<section  id="hobitants_calendar">				
-	<div class="container-fluid padding d-none d-sm-block">
-	<div class="row padding">
-		<div class="col-xl-2 col-lg-2 col-md-1">
-		</div>
-		<div class="col-xl-8 col-lg-8 col-md-10 about-1">
-			<h3 class="display-4 text-center">Kalender</h3>
-			<div class="googleCalendar text-center">
-				  <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</div>
-		<div class="col-xl-2 col-lg-2 col-md-1">
-		</div>
-	</div>
-	</div>
-		<div class="container-fluid padding d-block d-sm-none">
-		<div class="row padding">
-			<div class="col-xl-2 col-lg-2 col-md-1">
-			</div>
-			<div class="col-xl-8 col-lg-8 col-md-10 about-1">
-				<h3 class="display-4 text-center">Kalender</h3>
-				<div class="googleCalendar text-center">
-					  <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
-				</div>
-			</div>
-			<div class="col-xl-2 col-lg-2 col-md-1">
-			</div>
-		</div>
-		</div>
-	</section>
-	
-	<section  id="voistlustants_calendar">				
-		<div class="container-fluid padding d-none d-sm-block">
-		<div class="row padding">
-			<div class="col-xl-2 col-lg-2 col-md-1">
-			</div>
-			<div class="col-xl-8 col-lg-8 col-md-10 about-1">
-				<h3 class="display-4 text-center">Kalender</h3>
-				<div class="googleCalendar text-center">
-					  <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
-				</div>
-			</div>
-			<div class="col-xl-2 col-lg-2 col-md-1">
-			</div>
-		</div>
-		</div>
-			<div class="container-fluid padding d-block d-sm-none">
-			<div class="row padding">
-				<div class="col-xl-2 col-lg-2 col-md-1">
-				</div>
-				<div class="col-xl-8 col-lg-8 col-md-10 about-1">
-					<h3 class="display-4 text-center">Kalender</h3>
-					<div class="googleCalendar text-center">
-						  <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
-					</div>
-				</div>
-				<div class="col-xl-2 col-lg-2 col-md-1">
-				</div>
-			</div>
-			</div>
-		</section>
-<!---  KALENDRID lõpp!!!!! -->
-<section id="kursus_registration">				
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-    <div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		
-		<div class="contact-clean">
-			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
-				<h3 class="display-4 text-center">Registreeri</h3>
-				<div class="form-group"><input class="form-control" type="text" name="nimi" placeholder="Name" /></div>
-				<div class="form-group"><input class="form-control is-invalid" type="email" name="_replyto" placeholder="Email" /><small class="form-text text-danger">Please enter a correct email address.</small></div>
-				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
-				<input type="hidden" name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" />
-            	<input type="hidden" name="_subject" value="Registreerimine" />
-            	<input type="hidden" name="_format" value="plain" />
-            	<input type="text" name="_gotcha" style="display:none" />
-				<div class="form-group"><input class="btn btn-primary" value="Send" type="submit"/></div>
-			</form>
-		</div>
-	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-</div>
-</div>	
-</section>
-<!--- KURSUSED end -->
-<!--- HOBITANTS beginning -->
-<section id="hobiklubi">				
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-    <div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Hobiklubi</h3>
-		<p>HOBIKLUBI on tantsuharrastus nendele, kellele tants, muusika ja liikumine on saanud osaks elustiilist. Hobiklubi õhtutel tantsitakse ja veedetakse koos aega heas seltskonnas, õppides uusi huvitavaid tantsukombinatsioone. </p>
-		<br>
-		<p>2017/2018 hooajal toimuvad tunnid järgmiselt:</p>
-		<p>
-HOBIKLUBI I teisipäeviti kl 18:30-20.00<br>
-Rocca al Mare Kooli aulas (Vabaõhumuuseumi tee 8)<br>
-SÜGIS 19.09.2017 - 12.12.2017<br>
-TALV 09.01.2018 - 13.03.2018<br>
-KEVAD 20.03.2018 - 15.05.2018<br>
-Tasumine paarile 3. osamaksena:<br>
-1. osa 185 € (sügis), 2. osa 160 € (talv), 3. osa 128 € (kevad)<br>
-<br>
-HOBIKLUBI II teisipäeviti kl 20:00-21:30<br>
-Rocca al Mare Kooli aulas (Vabaõhumuuseumi tee 8)<br>
-SÜGIS 19.09.2017 - 12.12.2017<br>
-TALV 09.01.2017 - 13.03.2018<br>
-KEVAD 20.03.2017 - 15.05.2018<br>
-Tasumine paarile 3. osamaksena:<br>
-1. osa 185 € (sügis), 2. osa 160 € (talv), 3. osa 128 € (kevad)<br>
-<br>					
-HOBIKLUBI III kolmapäeviti kl 20.00-21.30<br>
-Rocca al Mare Kooli aulas (Vabaõhumuusumi tee 8)<br>
-SÜGIS 20.09.2017 - 13.12.2017<br>
-TALV 10.01.2018 - 14.03.2018<br>
-KEVAD 21.03.2018 - 16.05.2018<br>
-Tasumine paarile 3. osamaksena:<br>
-1. osa 185 € (sügis), 2. osa 160 € (talv), 3. osa 144 € (kevad)<br>
-<br>					
-HOBIKLUBI IV kolmapäeviti kl 20.00-21.30<br>
-Haabersti Vene Gümnaasiumi aulas (Õismäe tee 132)<br>
-SÜGIS 13.09.2017 - 13.12.2017<br>
-TALV 10.01.2018 - 14.03.2018<br>
-KEVAD 21.03.2018 - 16.05.2018<br>
-Tasumine paarile 3. osamaksena:<br>
-1. osa 200 € (sügis), 2. osa 160 € (talv), 3. osa 144 € (kevad)<br>
-		</p>
-	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-</div>
-</div>	
-</section>
-
-<section id="voistlustants">				
-	<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-xl-3 col-lg-2 col-md-1">
-		</div>
-		<div class="col-xl-6 col-lg-8 col-md-10 about-1">
-			<h3 class="display-4 text-center">Võistlustants täiskasvanutele</h3>
-			<p>Täiskasvanute standardtantsude treeningud 2017/18 hooajal toimuvad võistlevatele paaridele Haabersti Vene Gümnaasiumi aulas alates 14. augustist esmaspäeviti ja kolmapäeviti  18.15 - 19.45. 
-				<br>
-				NB! 9. augustil toimub ettevalmistav harjutustund.
-				<br>
-				Võimalus võtta eratunde!
-				<br>
-				Lisainfo: 5919 0800, info@tantsumeka.ee</p>
-			</div>
-		<div class="col-xl-3 col-lg-2 col-md-1">
-		</div>
-	</div>
-	</div>	
-	</section>
-
-</main>
 <!--- Footer -->
-<div id="footer">
-	<footer >
-		<div class="container-fluid padding">
-			<div class="row text-center">
-				<div class="col-12">
-					<div class="footer-box">
-						<h5 class="social-info">Rocca Al Mare Kool, Vabaõhumuuseumi tee 8, 13521 Tallinn; telefon 5919 0800; e-post info@tantsumeka.ee&nbsp;</h5>
-						<a href="#" class="social" target="_blank"><i class="fab fa-facebook"></i></a>
-						<a href="#" class="social" target="_blank"><i class="fab fa-twitter"></i></a>
-						<a href="#" class="social" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-						<a href="#" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
-						<a href="#" class="social" target="_blank"><i class="fab fa-youtube"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-</div>
+<?php
+	require("footer.php");
+?>
 </div>
 </body>
 </html>

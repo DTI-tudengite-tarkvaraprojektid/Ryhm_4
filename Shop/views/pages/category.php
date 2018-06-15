@@ -12,15 +12,16 @@
 		}
 		if(isset($_GET['sex']))
 		{
-			foreach($categories as $item)
-			{?> 	<!--toodete lingid-->
-				<div class="col-lg-2 tants1">
-					<div class="shop-btn">
-						<div class="btn btn-block btn-primary1">
-							<a href="?&view=cat&page=0&id=<?php echo $item['cat_id'];?>" class="btn btn-block" id="shop-menu"><?php echo $item['name'];?></a>
-						</div>
+			foreach($categories as $item){
+?> 	<!--toodete lingid-->
+			<div class="col-lg-4 col-md-6 tants1">
+				<div class="shop-btn">
+					<div class="btn btn-block btn-primary1">
+						<a href="?&view=cat&page=0&id=<?php echo $item['cat_id'];?>" class="btn btn-block" id="shop-menu"><?php echo $item['name'];?></a>
+						<a href="?&view=cat&page=0&id=<?php echo $item['cat_id'];?>"><img src="images_shop/<?php echo $item['cat_id'];?>.png"  class="img-fluid" alt="Responsive image"></a>
 					</div>
 				</div>
+			</div>
 			<?php }
 		}
 		if(!isset($_GET['sex']))

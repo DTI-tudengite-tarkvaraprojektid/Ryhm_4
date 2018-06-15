@@ -2,7 +2,7 @@
     <div class="row padding">
 		<?php
 		$cat = $_GET['id'];
-		$products = get_cat_products($cat)[0];
+		$products = get_cat_products($cat)[0]; 
 
 		foreach($products as $item)
 		{?>
