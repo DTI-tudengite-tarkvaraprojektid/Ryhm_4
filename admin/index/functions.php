@@ -22,10 +22,10 @@
 				header("Location: index.php");//saadab
 				exit();
 			} else {
-				$notice = "Vale salasõna!";
+				$notice = 1;
 			}
 		} else {
-			$notice = "Sellise e-postiga kasutajat pole!";
+			$notice = 2;
 		}
 		$stmt->close();
 		$mysqli->close();

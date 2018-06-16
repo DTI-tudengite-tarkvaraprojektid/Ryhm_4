@@ -2,7 +2,28 @@
 	include('conn.php');
 	$id=$_GET['id'];
 	$query=mysqli_query($conn,"select * from `products` where id='$id'");
-	$row=mysqli_fetch_array($query);
+    $row=mysqli_fetch_array($query);
+    require("../functions.php");
+
+        //LOG OUT
+        if(isset($_GET["logout"])){
+            session_destroy(); 
+            header("Location: ../login.php");
+        }
+
+        // Create connection
+        include('../functions/Create_connection.php');
+        //IF NOT LOGGED IN , logout
+        if(!isset($_SESSION["userId"])){
+            header("Location: ../login.php");
+            exit();
+        }
+        //only admin is allowed here
+        if(($_SESSION["userId"])!==1){
+            header("Location: ../");
+            exit();
+        }
+        //Managing users
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,21 +74,21 @@
                                         <h2>Muuda</h2>
                                         <form method="POST" action="update.php?id=<?php echo $id; ?>">
                                             <div class="form-group row">
-                                                <label for="example-email-input" class="col-2 col-form-label">nimetus</label>
+                                                <label for="name-input" class="col-2 col-form-label">nimetus</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="text" value="<?php echo $row['name']; ?>" id="example-email-input" name="name">
+                                                    <input class="form-control" type="text" value="<?php echo $row['name']; ?>" id="name-input" name="name">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="example-text-input" class="col-2 col-form-label">kirjeldus</label>
+                                                <label for="description-input" class="col-2 col-form-label">kirjeldus</label>
                                                 <div class="col-10">
-                                                    <textarea class="form-control" type="text"  id="example-text-input" name="description" rows="3"><?php echo $row['description']; ?></textarea>
+                                                    <textarea class="form-control" type="text"  id="description-input" name="description" rows="3"><?php echo $row['description']; ?></textarea>
                                                 </div>    
                                             </div>
                                             <div class="form-group row">
-                                                <label for="example-email-input" class="col-2 col-form-label">hind</label>
+                                                <label for="price-input" class="col-2 col-form-label">hind</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="number" value="<?php echo $row['price']; ?>" id="example-email-input" name="price">
+                                                    <input class="form-control" type="number" value="<?php echo $row['price']; ?>" id="price-input" name="price">
                                                 </div>    
                                             </div>
                                             <div class="form-group row">

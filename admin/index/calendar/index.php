@@ -64,7 +64,23 @@
                 </ul>
             </div>
             <div id="page-content-wrapper">
-                <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+                <div class="row">
+                    <div class="col-12">
+                        <section>
+                            <row>
+                                <div class="col-8">
+                                    <div class="calendar-container">
+                                        <iframe style="border: 0;" src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" frameborder="0" width="800" height="600" scrolling="yes"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <h2>Juhend</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis tortor eros, eu gravida enim mattis sit amet. Nullam in metus ligula. Nam bibendum, erat a dictum imperdiet, tortor enim rutrum felis, at aliquet leo tortor egestas ligula. Aenean bibendum nulla at dolor ullamcorper, id dapibus sapien bibendum. Pellentesque congue tristique magna a imperdiet. Etiam varius interdum sem, vitae sagittis elit vestibulum non. Suspendisse at consequat leo, vitae bibendum sapien. Integer dignissim tellus sapien, a bibendum velit viverra pulvinar. Morbi fermentum velit ut interdum imperdiet. Duis sed ante turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eleifend nibh eu interdum sodales. Sed laoreet libero eget imperdiet feugiat. In ultricies tincidunt elit nec accumsan. Ut ultricies sem scelerisque, posuere orci non, varius augue. </p>
+                                </div>
+                            </row>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

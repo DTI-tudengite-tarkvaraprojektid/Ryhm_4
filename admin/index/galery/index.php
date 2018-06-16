@@ -64,13 +64,29 @@
                 </ul>
             </div>
             <div id="page-content-wrapper">
-                <script async src="https://www.publicalbum.org/js/pa-ins.min.js"></script>
-                <ins class="pa-widget-gallery" style="width:100%;height:480px;"
-                    data-url="https://photos.google.com/share/AF1QipMnlk36KXQ6D4OjFedApi_tDvkdm7WZZPBXYanIawKlKh_EQ5ceZiLazZ9pw6uONg?key=TkJGcFotclZsTzZNdVRPMkx6RWNKZWhUci1yVllR"
-                    data-uid="ba079acfd0c1f45e73dd95c1bd16021f55eee0ce879762958184e263102275ad"
-                    data-delay="5">
-                </ins>
-            </div>
+                <div class="row">
+                    <div class="col-12"
+                        <section>
+                            <row>
+                                <div class="col-8">
+                                    <div>
+                                        <script async src="https://www.publicalbum.org/js/pa-ins.min.js"></script>
+                                        <ins class="pa-widget-gallery" style="width:100%;height:480px;"
+                                            data-url="https://photos.google.com/share/AF1QipMnlk36KXQ6D4OjFedApi_tDvkdm7WZZPBXYanIawKlKh_EQ5ceZiLazZ9pw6uONg?key=TkJGcFotclZsTzZNdVRPMkx6RWNKZWhUci1yVllR"
+                                            data-uid="ba079acfd0c1f45e73dd95c1bd16021f55eee0ce879762958184e263102275ad"
+                                            data-delay="5">
+                                        </ins>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <h2>Juhend</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis tortor eros, eu gravida enim mattis sit amet. Nullam in metus ligula. Nam bibendum, erat a dictum imperdiet, tortor enim rutrum felis, at aliquet leo tortor egestas ligula. Aenean bibendum nulla at dolor ullamcorper, id dapibus sapien bibendum. Pellentesque congue tristique magna a imperdiet. Etiam varius interdum sem, vitae sagittis elit vestibulum non. Suspendisse at consequat leo, vitae bibendum sapien. Integer dignissim tellus sapien, a bibendum velit viverra pulvinar. Morbi fermentum velit ut interdum imperdiet. Duis sed ante turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eleifend nibh eu interdum sodales. Sed laoreet libero eget imperdiet feugiat. In ultricies tincidunt elit nec accumsan. Ut ultricies sem scelerisque, posuere orci non, varius augue.</p>
+                                </div>
+                            </row>
+                        </section>
+                    </div>
+                </div>
+            </div>                    
         </div>
     </body>
 </html>

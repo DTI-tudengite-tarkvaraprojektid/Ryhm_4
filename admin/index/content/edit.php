@@ -2,7 +2,29 @@
 	include('conn.php');
 	$id=$_GET['id'];
 	$query=mysqli_query($conn,"select * from `WebContent` where postid='$id'");
-	$row=mysqli_fetch_array($query);
+    $row=mysqli_fetch_array($query);
+    require("../functions.php");
+
+        //LOG OUT
+        if(isset($_GET["logout"])){
+            session_destroy(); 
+            header("Location: ../login.php");
+        }
+
+        // Create connection
+        include('../functions/Create_connection.php');
+        //IF NOT LOGGED IN , logout
+        if(!isset($_SESSION["userId"])){
+            header("Location: ../login.php");
+            exit();
+        }
+        //only admin is allowed here
+        if(($_SESSION["userId"])!==1){
+            header("Location: ../");
+            exit();
+        }
+        //Managing users
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

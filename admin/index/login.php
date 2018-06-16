@@ -46,13 +46,16 @@
 					<div class="form-group text-center" >
 						<img src="assets/img/tantsumeka_hele.png"  alt="logo" height="80" width="133">
 					</div>
+					<br>
 					<div class="form-group">
-						<input name="loginEmail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kasutaja" value="<?php echo $loginEmail; ?>">
+						<input name="loginEmail" type="email" class="form-control <?php if($notice == 2) echo 'is-invalid' ; ?>" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kasutaja" value="<?php echo $loginEmail; ?>">
+						<?php if($notice == 2) echo '<div class="invalid-feedback">Vale email!</div>';?>
 					</div>
 					<div class="form-group">
-						<input name="loginPassword" type="password" class="form-control" id="exampleInputPassword1" placeholder="Salasõna">
+						<input name="loginPassword" type="password" class="form-control <?php if($notice == 1) echo 'is-invalid';?>" id="exampleInputPassword1" placeholder="Salasõna">
+						<?php if($notice == 1) echo '<div class="invalid-feedback">Vale parool!</div>';?>
 					</div>
-					<input name="loginButton" type="submit" class="btn btn-primary btn-block" value="Logi sisse"><span><?php echo $notice; ?></span>
+					<input name="loginButton" type="submit" class="btn btn-primary btn-block" value="Logi sisse"><span></span>
 				</form>
 			</section>
 		</section>

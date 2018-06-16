@@ -15,6 +15,11 @@
 		header("Location: ../login.php");
 		exit();
     }
+    //only admin is allowed here
+    if(($_SESSION["userId"])!==1){
+		header("Location: ../");
+		exit();
+    }
     //Managing users
     
 ?>
@@ -69,21 +74,21 @@
                                 <div>
                                     <form method="POST" action="add.php">
                                         <div class="form-group row">
-                                            <label for="example-email-input" class="col-2 col-form-label">Email</label>
+                                            <label for="email-input" class="col-2 col-form-label">Email</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="email" value="" id="example-email-input" name="email">
+                                                <input class="form-control" type="email" value="" id="email-input" name="email">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">Nimi</label>
+                                            <label for="username-input" class="col-2 col-form-label">Nimi</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="" id="example-text-input" name="username">
+                                                <input class="form-control" type="text" value="" id="username-input" name="username">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="example-password-input" class="col-2 col-form-label">Parool</label>
+                                            <label for="password-input" class="col-2 col-form-label">Parool</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="password" value="" id="example-password-input" name="password">
+                                                <input class="form-control" type="password" value="" id="password-input" name="password">
                                             </div>
                                         </div>
                                         <div class="form-group row">

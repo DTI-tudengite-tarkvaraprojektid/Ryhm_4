@@ -2,7 +2,29 @@
 	include('conn.php');
 	$id=$_GET['id'];
 	$query=mysqli_query($conn,"select * from `users` where userid='$id'");
-	$row=mysqli_fetch_array($query);
+    $row=mysqli_fetch_array($query);
+     //only admin is allowed here
+        require("../functions.php");
+
+        //LOG OUT
+        if(isset($_GET["logout"])){
+            session_destroy(); 
+            header("Location: ../login.php");
+        }
+
+        // Create connection
+        include('../functions/Create_connection.php');
+        //IF NOT LOGGED IN , logout
+        if(!isset($_SESSION["userId"])){
+            header("Location: ../login.php");
+            exit();
+        }
+        //only admin is allowed here
+        if(($_SESSION["userId"])!==1){
+            header("Location: ../");
+            exit();
+        }
+        //Managing users
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,16 +75,22 @@
                                         <h2>Muuda</h2>
                                         <form method="POST" action="update.php?id=<?php echo $id; ?>">
                                             <div class="form-group row">
-                                                <label for="example-email-input" class="col-2 col-form-label">kasutaja</label>
+                                                <label for="username-input" class="col-2 col-form-label">kasutaja</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="text" value="<?php echo $row['username']; ?>" id="example-email-input" name="username">
+                                                    <input class="form-control" type="text" value="<?php echo $row['username']; ?>" id="username-input" name="username">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="example-email-input" class="col-2 col-form-label">email</label>
+                                                <label for="email-input" class="col-2 col-form-label">email</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="text" value="<?php echo $row['email']; ?>" id="example-email-input" name="email">
+                                                    <input class="form-control" type="email" value="<?php echo $row['email']; ?>" id="email-input" name="email">
                                                 </div>    
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="password-input" class="col-2 col-form-label">Parool</label>
+                                                <div class="col-10">
+                                                    <input class="form-control" type="password" value="" id="password-input" name="password" placeholder="Sisestage uus salasõna">
+                                                </div>
                                             </div>
                                             <input type="submit" name="submit" class="btn btn-primary" type="button" value="Salvesta">
                                             <a href="index.php"  type="button" class="btn btn-dark" role="button">tagasi</a>    

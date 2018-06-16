@@ -65,28 +65,28 @@
         </div>
         <div id="page-content-wrapper">
             <div class="row">
-                <div class="col-lg-12"
+                <div class="col-lg-12">
                     <section>
                         <row>
                             <div class="col-12">
                                 <div>
                                     <form method="POST" action="add.php" enctype='multipart/form-data'>
                                         <div class="form-group row">
-                                            <label for="example-email-input" class="col-2 col-form-label">nimetus</label>
+                                            <label for="name-input" class="col-2 col-form-label">nimetus</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="" id="example-email-input" name="name">
+                                                <input class="form-control" type="text" value="" id="name-input" name="name">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">Kirjeldus</label>
+                                            <label for="description-input" class="col-2 col-form-label">Kirjeldus</label>
                                             <div class="col-10">
-                                                <textarea class="form-control" type="text" value="" id="example-text-input" name="description" rows="3"></textarea>
+                                                <textarea class="form-control" type="text" value="" id="description-input" name="description" rows="3"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">hind</label>
+                                            <label for="price-input" class="col-2 col-form-label">hind</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="" id="example-text-input" name="price">
+                                                <input class="form-control" type="text" value="" id="price-input" name="price">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -125,9 +125,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-2 col-form-label" for="exampleInputFile">File input</label>
+                                            <label class="col-2 col-form-label" for="input-file">File input</label>
                                             <div class="col-10">
-                                                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" name="file">
+                                                <input type="file" class="form-control-file" id="input-file" aria-describedby="fileHelp" name="file">
                                                 <small id="fileHelp" class="form-text text-muted">Lubatud on jpg, jpeg ja png failid.</small>
                                             </div>
                                         </div>
@@ -148,7 +148,7 @@
                                             <th scope="col" style="width: 30%">kirjeldus</th>
                                             <th scope="col" style="width: 5%">hind</th>
                                             <th scope="col" style="width: 5%">kategooria</th>
-                                            <th scope="col" style="width: 30%">koks</th>
+                                            <th scope="col" style="width: 30%">konts</th>
                                             <th scope="col" style="width: 15%"></th>
                                         </thead>
                                         <tbody>
