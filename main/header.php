@@ -2,7 +2,7 @@
 <header id="topofpage">
 <nav class="navbar navbar-expand-lg navbar-light bg-logo fixed-top">
 <div class="container">
-	<a class="navbar-brand logo" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/" target="_self" style="background-image:url(&quot;https://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/assets/img/tantsumeka_hele.png&quot;);" onclick="showHeaderText()"></a>
+	<a class="navbar-brand logo" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/" target="_self" style="background-image:url(&quot;assets/img/tantsumeka.svg&quot;);" onclick="showHeaderText()"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="navbar-toggler-icon"></span>
 	</button>
