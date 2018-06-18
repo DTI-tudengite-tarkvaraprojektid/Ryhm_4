@@ -71,6 +71,7 @@
 		<h2 class="text-center">Tantsuõpetajad / assistendid</h2>
 	</div>
 	<?php include ('trenerid.php') ?>
+
 </div>
 </div>
 

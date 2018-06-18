@@ -2,7 +2,11 @@
 <header id="topofpage">
 <nav class="navbar navbar-expand-lg navbar-light bg-logo fixed-top">
 <div class="container">
+<<<<<<< HEAD
 	<a class="navbar-brand logo" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/" target="_self" style="background-image:url(&quot;https://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/img/tantsumeka.svg&quot;);" onclick="showHeaderText()"></a>
+=======
+	<a class="navbar-brand logo" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/" target="_self" style="background-image:url(&quot;http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/img/tantsumeka.svg&quot;);" onclick="showHeaderText()"></a>
+>>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -12,8 +16,8 @@
 			    <a class="nav-link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #ffef8f;">KURSUSED</a>
 			    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 			     <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/kursused/algkursus/" target="_self">Algkursus</a>
-			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/kursused/jatkukursus/" target="_self">Jätkukursus</a>
-			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/kursused/edasijoudnud/" target="_self">Edasijõudnute kursus</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/kursused/jatkukursus/" target="_self">Jätkukursus</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/kursused/edasijoudnud/" target="_self">Edasijõudnute kursus</a>
 			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/kursused/kalender/" target="_self">Kalender</a>
 			    </div>
 			</li>
@@ -51,7 +55,7 @@
 			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">LISAKS</a>
 			    <div class="dropdown-menu">
 			      <a class="dropdown-item" href="#" target="_self">Galerii</a>
-			      <a class="dropdown-item" href="#" target="_self">Kontakt</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/lisaks/kontakt/" target="_self">Kontakt</a>
 			      <a class="dropdown-item" href="#" target="_self">Something else here</a>
 			    </div>
 			</li>

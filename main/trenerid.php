@@ -6,6 +6,7 @@
 		$serverPassword = "if17";
 		$db = 'if17_Tantsumeka';
 		$connection = new mysqli($serverHost, $serverUsername, $serverPassword, $db);
+		mysqli_set_charset($connection,"utf8");
 		return $connection;
 	}
 	
@@ -30,16 +31,16 @@
 	}
 	
 	$trainers = get_tren(); 
-	
+	$i = 1;
 	foreach($trainers as $item)
 	{?>
-		<div class="col-lg-3 col-md-6">
+		<div class="col-xl-4 col-lg-4 col-md-6">
 			<div class="card">
 				<div class="card-body">
+					<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener<?php echo $i;?>" aria-expanded="false" aria-controls="treener<?php echo $i;?>">
 					<img class="card-img-top treener-pilt" src="assets/img/treenerid/small/<?php echo $item['photo']?>">
-					
-					<h2 class="card-title text-center"><?php echo $item['name']?></h2>
-					<div class="collapse" id="treener2">
+					<h2 class="card-title text-center"><?php echo $item['name']?></h2></a>
+					<div class="collapse" id="treener<?php echo $i; $i++?>">
 					<div class="card card-body" id="tabp">
 					<p class="card-text"><?php echo $item['info']?></p>
 					</div>
@@ -48,3 +49,4 @@
 			</div>
 		</div>
 	<?php } ?>
+	

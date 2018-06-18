@@ -55,8 +55,13 @@ Maksumus paarile: 160 €<br>
 			<h2 class="text-center">Registreeri</h2>
 		</div>
 			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
+<<<<<<< HEAD
 				<div class="form-group"><input class="form-control" name="nimi" placeholder="Name" type="text"></div>
 				<div class="form-group"><input class="form-control" name="_replyto" placeholder="Email" type="email"></div>
+=======
+				<div class="form-group"><input class="form-control" type="text" name="nimi" placeholder="Name" /></div>
+				<div class="form-group"><input class="form-control is-invalid" type="email" name="_replyto" placeholder="Email" /><small class="form-text text-danger">Please enter a correct email address.</small></div>
+>>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
 				<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
             	<input name="_subject" value="Registreerimine" type="hidden">
@@ -68,12 +73,16 @@ Maksumus paarile: 160 €<br>
 </div>
 </div>	
 </section>
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+</main>
+>>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 <!--- Footer -->
 <?php
 	require("../../footer.php");

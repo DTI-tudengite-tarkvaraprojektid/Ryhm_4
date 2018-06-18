@@ -35,26 +35,44 @@
 <!-- header end -->
 
 
+<<<<<<< HEAD
 <section id="edasijoudnud">
+=======
+<section id="edasijoudnud">				
+>>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 <div class="container-fluid col-lg-5 col-md-8 padding">
 <div class="row padding">
 	<div class="about-1">
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Edasijõudnute kursus</h2>
 		</div>
+<<<<<<< HEAD
 		<p>EDASIJÕUDNUTE KURSUS on veel üks võimalus jätkata tantsu õppimist. Need kursused on hoojapõhised ja kestavad sügisest kevadeni. Sealt edasi saab liikuda hobiklubisse.</p> 
 		<p>
         EDASIJÕUDNUTE KURSUS KEVADEL neljapäeviti kl 20:00-21:30<br>
         Haabersti Vene Gümnaasiumis (Õismäe tee 132)<br>
         22.03.2018 - 17.05.2018 (9 korda)<br>
         Maksumus paarile: 171 €<br>
+=======
+		<p>EDASIJÕUDNUTE KURSUS on veel üks võimalus jätkata tantsu õppimist. Need kursused on hoojapõhised ja kestavad sügisest kevadeni. Sealt edasi saab liikuda hobiklubisse.</p>
+		<p>
+EDASIJÕUDNUTE KURSUS KEVADEL neljapäeviti kl 20:00-21:30<br>
+Haabersti Vene Gümnaasiumis (Õismäe tee 132)<br>
+22.03.2018 - 17.05.2018 (9 korda)<br>
+Maksumus paarile: 171 €<br>
+>>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 		</p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>
 		</div>
 			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
+<<<<<<< HEAD
 				<div class="form-group"><input class="form-control" name="nimi" placeholder="Name" type="text"></div>
 				<div class="form-group"><input class="form-control is-invalid" name="_replyto" placeholder="Email" type="email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+=======
+				<div class="form-group"><input class="form-control" type="text" name="nimi" placeholder="Name" /></div>
+				<div class="form-group"><input class="form-control is-invalid" type="email" name="_replyto" placeholder="Email" /><small class="form-text text-danger">Please enter a correct email address.</small></div>
+>>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
 				<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
             	<input name="_subject" value="Registreerimine" type="hidden">
@@ -67,6 +85,10 @@
 </div>	
 </section>
 
+<<<<<<< HEAD
+=======
+</main>
+>>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 <!--- Footer -->
 <?php
 	require("../../footer.php");
