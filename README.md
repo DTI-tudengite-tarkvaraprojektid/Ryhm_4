@@ -1,6 +1,7 @@
 # Tantsumeka veebilehekülg
 Tallinna Ülikooli Suvepraktika raames arendatud veebileht Tantsumeka tantsukooli jaoks.
-<h2>Pildid</h2> 
+
+## Pildid 
 ![alt text][screen1]
 
 [screen1]: https://github.com/RobertShev/Ryhm_4/blob/master/readmeIMG/photo_2018-06-18_13-16-49.jpg "Koduleht ilma videota"
