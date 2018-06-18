@@ -43,7 +43,7 @@
 			<h2 class="text-center">Algkursus</h2>
 		</div>
 		<p>Seltskonnatantsu ALGKURSUS on mõeldud neile, kel puudub tantsuoskus või, kes on tantsukursustel õpitust palju unustanud. Algkursustel taastate või omandate esmase hädavajaliku tantsuoskuse kaheksas tantsus: fokstrot, aeglane valss, valss, tango, samba, rumba, jive ja cha cha cha.</p> 
-		<p class="display-4">
+		<p>
 ALGKURSUS KEVADEL esmaspäeviti kl 20:00-21:30<br>
 Rocca al Mare Koolis (Vabaõhumuuseumi tee 8)<br>
 26.03.2018 - 14.05.2018 (8 korda)<br>

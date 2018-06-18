@@ -12,8 +12,8 @@
 			    <a class="nav-link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #ffef8f;">KURSUSED</a>
 			    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 			     <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/kursused/algkursus/" target="_self">Algkursus</a>
-			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/kursused/jatkukursus/" target="_self">Jätkukursus</a>
-			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/kursused/edasijoudnud/" target="_self">Edasijõudnute kursus</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/kursused/jatkukursus/" target="_self">Jätkukursus</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/kursused/edasijoudnud/" target="_self">Edasijõudnute kursus</a>
 			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/kursused/kalender/" target="_self">Kalender</a>
 			    </div>
 			</li>
