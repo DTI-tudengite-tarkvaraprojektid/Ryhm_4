@@ -6,6 +6,7 @@
 		$serverPassword = "if17";
 		$db = 'if17_Tantsumeka';
 		$connection = new mysqli($serverHost, $serverUsername, $serverPassword, $db);
+		mysqli_set_charset($connection,"utf8");
 		return $connection;
 	}
 	
@@ -42,7 +43,6 @@
 					<div class="collapse" id="treener<?php echo $i; $i++?>">
 					<div class="card card-body" id="tabp">
 					<p class="card-text"><?php echo $item['info']?></p>
-					
 					</div>
 					</div>
 				</div>
