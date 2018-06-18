@@ -27,7 +27,7 @@
 			<li class="nav-item dropdown">
 			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">VÕISTLUSTANTS</a>
 			    <div class="dropdown-menu">
-			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/voistlustants/taiskasvanutele/" target="_self">Võistlusttants täiskasvanutele</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/voistlustants/taiskasvanutele/" target="_self">Võistlusttants</a>
 			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/voistlustants/kalender/" target="_self">Kalender</a>
 			    </div>
 			</li>
@@ -51,7 +51,7 @@
 			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">LISAKS</a>
 			    <div class="dropdown-menu">
 			      <a class="dropdown-item" href="#" target="_self">Galerii</a>
-			      <a class="dropdown-item" href="#" target="_self">Kontakt</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/lisaks/kontakt/" target="_self">Kontakt</a>
 			      <a class="dropdown-item" href="#" target="_self">Something else here</a>
 			    </div>
 			</li>

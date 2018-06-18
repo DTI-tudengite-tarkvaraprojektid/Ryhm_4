@@ -22,6 +22,24 @@ body {
    padding-top: 110px;
 }
 
+.img-fluid{
+  max-width: 40%;
+}
+
+.large{
+  max-width: 70%;
+}
+
+.small{
+  max-width: 20%;
+}
+
+.btn-primary{
+  color:#fff;
+  background-color:#4085cf;
+  border-color:#005cbf;
+}
+
 .treener-pilt {
   border-radius: 4px;
 }
@@ -93,6 +111,13 @@ body {
   color: black;
 }
 
+.about-1 a {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #4085cf;;
+}
+
 .about-1 h3 {
   font-size: 2.75rem;
   font-family: 'Montserrat', sans-serif;
@@ -143,6 +168,14 @@ body {
   color: black;
 }
 
+.card-title {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
 
 /*Tantsututvustused*/
 #tantsud h2 {
@@ -151,6 +184,7 @@ body {
   font-weight: 500;
   color: black;
 }
+
 
 /*tantsustiilide kastid*/
 .tabl a{
@@ -462,7 +496,7 @@ hr.light-100 {
 @media (max-width: 768px) {
 
 .display-4 {
-  font-size: 200%;
+  font-size: 100%;
 }
 
 .social {
@@ -529,6 +563,14 @@ hr.light-100 {
   font-weight: 400i;
   color: black;
 }
+
+.about-1 a {
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #4085cf;
+} 
+
 .tabl a{
   font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;

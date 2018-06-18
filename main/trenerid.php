@@ -34,7 +34,7 @@
 	$i = 1;
 	foreach($trainers as $item)
 	{?>
-		<div class="col-lg-3 col-md-6">
+		<div class="col-xl-4 col-lg-4 col-md-6">
 			<div class="card">
 				<div class="card-body">
 					<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener<?php echo $i;?>" aria-expanded="false" aria-controls="treener<?php echo $i;?>">
