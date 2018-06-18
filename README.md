@@ -42,6 +42,10 @@ Admini kasutajaliides
   <li>Bootsrtrap 4.1</li>
 </ul>
 
+<h2>Andmebaasi juhised</h2>
+Vajalikud failid asuvad sql kaustas.
+https://github.com/RobertShev/Ryhm_4/tree/master/sql
+
 <h2>License</h2>
 The MIT License (MIT)
 
