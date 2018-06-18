@@ -30,7 +30,7 @@
 	}
 	
 	$trainers = get_tren(); 
-	
+	$i = 1;
 	foreach($trainers as $item)
 	{?>
 		<div class="col-lg-3 col-md-6">
@@ -39,7 +39,7 @@
 					<img class="card-img-top treener-pilt" src="assets/img/treenerid/small/<?php echo $item['photo']?>">
 					
 					<h2 class="card-title text-center"><?php echo $item['name']?></h2>
-					<div class="collapse" id="treener2">
+					<div class="collapse" id="treener<?php echo $i; $i++?>">
 					<div class="card card-body" id="tabp">
 					<p class="card-text"><?php echo $item['info']?></p>
 					</div>
