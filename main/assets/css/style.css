@@ -599,7 +599,23 @@ figure {
     padding: 0rem;
 }
 
+.img-fluid{
+  max-width: 40%;
+}
 
+.large{
+  max-width: 70%;
+}
+
+.small{
+  max-width: 20%;
+}
+
+.btn-primary{
+  color:#fff;
+  background-color:#4085cf;
+  border-color:#005cbf;
+}
 
 
 /*

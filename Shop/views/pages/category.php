@@ -1,7 +1,7 @@
 <div class="container-fluid col-lg-10 padding">
-    <div class="row padding">
+    <div class="row padding about-1">
 		<div class="col-12 tantsimine" id="tantsud">
-			<h2 class="text-center">Shop</h2>
+			<h2 class="text-center">Tantsukingad</h2>
 		</div>     
 		<?php 
 		$categories = get_cat_sex();

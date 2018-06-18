@@ -24,6 +24,8 @@
 		function collapsePanels(){
 			jQuery('.collapse').collapse('hide');
 		}
+
+		
 	</script>
 </head>
 <body>
@@ -36,54 +38,42 @@
 
 
 <section id="algkursus">
-<div class="container-fluid col-lg-5 col-md-8 col-sm-10 padding">
+<div class="container-fluid col-lg-5 col-md-8 padding">
 <div class="row padding">
-	<div class="about-1">
+	<div class="about-1 col-12">
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Algkursus</h2>
 		</div>
 		<p>Seltskonnatantsu ALGKURSUS on mõeldud neile, kel puudub tantsuoskus või, kes on tantsukursustel õpitust palju unustanud. Algkursustel taastate või omandate esmase hädavajaliku tantsuoskuse kaheksas tantsus: fokstrot, aeglane valss, valss, tango, samba, rumba, jive ja cha cha cha.</p> 
-		<p class="display-4">
+		<p>
 ALGKURSUS KEVADEL esmaspäeviti kl 20:00-21:30<br>
 Rocca al Mare Koolis (Vabaõhumuuseumi tee 8)<br>
 26.03.2018 - 14.05.2018 (8 korda)<br>
 Maksumus paarile: 160 €<br>
 		</p>
-	</div>
-</div>
-</div>	
-</section>
-
-<section id="kursus_registration">				
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-    <div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		
-		<div class="contact-clean">
-			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
-				<h3 class="display-4 text-center">Registreeri</h3>
-				<div class="form-group"><input class="form-control" type="text" name="nimi" placeholder="Name" /></div>
-				<div class="form-group"><input class="form-control is-invalid" type="email" name="_replyto" placeholder="Email" /><small class="form-text text-danger">Please enter a correct email address.</small></div>
-				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
-				<input type="hidden" name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" />
-            	<input type="hidden" name="_subject" value="Registreerimine" />
-            	<input type="hidden" name="_format" value="plain" />
-            	<input type="text" name="_gotcha" style="display:none" />
-				<div class="form-group"><input class="btn btn-primary" value="Send" type="submit"/></div>
-			</form>
+		<div class="col-12" id="tantsud">
+			<h2 class="text-center">Registreeri</h2>
 		</div>
+			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
+				<div class="form-group"><input class="form-control" name="nimi" placeholder="Name" type="text"></div>
+				<div class="form-group"><input class="form-control" name="_replyto" placeholder="Email" type="email"></div>
+				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
+				<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
+            	<input name="_subject" value="Registreerimine" type="hidden">
+            	<input name="_format" value="plain" type="hidden">
+            	<input name="_gotcha" style="display:none" type="text">
+				<div class="form-group"><input class="btn btn-primary" value="Send" type="submit"></div>
+			</form>
 	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
 </div>
 </div>	
 </section>
 
 
 
-</main>
+
+
+
 <!--- Footer -->
 <?php
 	require("../../footer.php");

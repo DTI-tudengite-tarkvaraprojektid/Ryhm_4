@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="https://greeny.cs.tlu.ee/~ttaevik/test/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
+	<link href="https://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
 	<script>
 		function hideHeaderText() {
     		var x = document.getElementById("tutvustus");
@@ -35,57 +35,38 @@
 <!-- header end -->
 
 
-<section id="jatkukursus">				
-<div class="container-fluid padding">
+<section id="edasijoudnud">
+<div class="container-fluid col-lg-5 col-md-8 padding">
 <div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-	<div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Jätkukursus</h3>
-		<p>JÄTKUKURSUS on niiöelda algkursuse pikendus ja sobib neile, kes soovivad oma tantsuoskust lihvida ja mõned tantsusammud juurde õppida. Põhitantsud on samad. Lisaks õpime buggi.</p> 
-		<pre>
-JÄTKUKURSUS KEVADEL neljapäeviti kl 18:30-20:00
-Haabersti Vene Gümnaasiumis (Õismäe tee 132)
-22.03.2018 - 17.05.2018 (9 korda)
-Maksumus paarile: 180 €
-		</pre>
-	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-</div>
-</div>
-</section>
-
-<section id="kursus_registration">				
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
-    <div class="col-xl-6 col-lg-8 col-md-10 about-1">
-		
-		<div class="contact-clean">
-			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
-				<h3 class="display-4 text-center">Registreeri</h3>
-				<div class="form-group"><input class="form-control" type="text" name="nimi" placeholder="Name" /></div>
-				<div class="form-group"><input class="form-control is-invalid" type="email" name="_replyto" placeholder="Email" /><small class="form-text text-danger">Please enter a correct email address.</small></div>
-				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
-				<input type="hidden" name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" />
-            	<input type="hidden" name="_subject" value="Registreerimine" />
-            	<input type="hidden" name="_format" value="plain" />
-            	<input type="text" name="_gotcha" style="display:none" />
-				<div class="form-group"><input class="btn btn-primary" value="Send" type="submit"/></div>
-			</form>
+	<div class="about-1">
+		<div class="col-12" id="tantsud">
+			<h2 class="text-center">Jätkukursus</h2>
 		</div>
+		<p>JÄTKUKURSUS on niiöelda algkursuse pikendus ja sobib neile, kes soovivad oma tantsuoskust lihvida ja mõned tantsusammud juurde õppida. Põhitantsud on samad. Lisaks õpime buggi.</p> 
+		<p>
+        JÄTKUKURSUS KEVADEL neljapäeviti kl 18:30-20:00<br>
+        Haabersti Vene Gümnaasiumis (Õismäe tee 132)<br>
+        22.03.2018 - 17.05.2018 (9 korda)<br>
+        Maksumus paarile: 180 €<br>
+		</p>
+		<div class="col-12" id="tantsud">
+			<h2 class="text-center">Registreeri</h2>
+		</div>
+			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
+				<div class="form-group"><input class="form-control" name="nimi" placeholder="Name" type="text"></div>
+				<div class="form-group"><input class="form-control is-invalid" name="_replyto" placeholder="Email" type="email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
+				<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
+            	<input name="_subject" value="Registreerimine" type="hidden">
+            	<input name="_format" value="plain" type="hidden">
+            	<input name="_gotcha" style="display:none" type="text">
+				<div class="form-group"><input class="btn btn-primary" value="Send" type="submit"></div>
+			</form>
 	</div>
-	<div class="col-xl-3 col-lg-2 col-md-1">
-    </div>
 </div>
 </div>	
 </section>
 
-
-
-</main>
 <!--- Footer -->
 <?php
 	require("../../footer.php");

@@ -30,7 +30,7 @@
 <div class="video-header wrap">
 	<div class="fullscreen-video-wrap active">
 		<video autoplay muted loop id="myVideo">
-			<source src="assets/video/video.mp4" type="video/mp4">
+			<source src="assets/video/video3.mp4" type="video/mp4">
 		</video>
 	</div>
 </div>
