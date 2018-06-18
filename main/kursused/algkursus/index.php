@@ -53,36 +53,48 @@ Maksumus paarile: 160 €<br>
 		</p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>
+			</div>
+				<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST" class="needs-validation" novalidate>
+					<div class="form-group">
+						<input class="form-control" name="nimi" placeholder="Name" type="text" required>
+						<div class="invalid-feedback">Palun sisestage oma nimi.</div>
+					</div>
+					<div class="form-group">
+						<input class="form-control" name="_replyto" placeholder="Email" type="email" required>
+						<div class="invalid-feedback">Sisestage korrektne e-mail.</div>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message" required></textarea>
+						<div class="invalid-feedback">Palun täitke</div>
+					</div>
+					<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
+					<input name="_subject" value="Registreerimine" type="hidden">
+					<input name="_format" value="plain" type="hidden">
+					<input name="_gotcha" style="display:none" type="text">
+					<div class="form-group">
+						<input class="btn btn-primary" value="Send" type="submit">
+					</div>
+				</form>
+				<script>
+        			var form = document.querySelector('.needs-validation');
+        			form.addEventListener('submit', function(event) {
+            			if (form.checkValidity() === false) {
+               				event.preventDefault();
+                			event.stopPropagation();
+            			}
+            			form.classList.add('was-validated');
+        			})
+    			</script>
+			</div>
 		</div>
-			<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST">
-<<<<<<< HEAD
-				<div class="form-group"><input class="form-control" name="nimi" placeholder="Name" type="text"></div>
-				<div class="form-group"><input class="form-control" name="_replyto" placeholder="Email" type="email"></div>
-=======
-				<div class="form-group"><input class="form-control" type="text" name="nimi" placeholder="Name" /></div>
-				<div class="form-group"><input class="form-control is-invalid" type="email" name="_replyto" placeholder="Email" /><small class="form-text text-danger">Please enter a correct email address.</small></div>
->>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
-				<div class="form-group"><textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message"></textarea></div>
-				<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
-            	<input name="_subject" value="Registreerimine" type="hidden">
-            	<input name="_format" value="plain" type="hidden">
-            	<input name="_gotcha" style="display:none" type="text">
-				<div class="form-group"><input class="btn btn-primary" value="Send" type="submit"></div>
-			</form>
-	</div>
-</div>
-</div>	
+	</div>	
 </section>
-<<<<<<< HEAD
 
 
 
 
 
 
-=======
-</main>
->>>>>>> 04ff39d6ba35f0e04f109438ee13ca9c8fbe4e2a
 <!--- Footer -->
 <?php
 	require("../../footer.php");
