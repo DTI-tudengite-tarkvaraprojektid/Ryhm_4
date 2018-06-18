@@ -37,14 +37,16 @@
 			<div class="card">
 				<div class="card-body">
 					<img class="card-img-top treener-pilt" src="assets/img/treenerid/small/<?php echo $item['photo']?>">
-					
+					<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener<?php echo $i;?>" aria-expanded="false" aria-controls="treener<?php echo $i;?>">
 					<h2 class="card-title text-center"><?php echo $item['name']?></h2>
 					<div class="collapse" id="treener<?php echo $i; $i++?>">
 					<div class="card card-body" id="tabp">
 					<p class="card-text"><?php echo $item['info']?></p>
+					</a>
 					</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	<?php } ?>
+	

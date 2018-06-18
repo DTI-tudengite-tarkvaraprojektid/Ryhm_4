@@ -75,9 +75,9 @@
 			<div class="card">
 				<div class="card-body">
 					<img class="card-img-top treener-pilt" src="assets/img/treenerid/small/treener3.jpg">
-					
+					<a data-toggle="collapse" class="btn btn-block" onclick="collapsePanels()" href="#treener1" aria-expanded="false" aria-controls="treener1">
 					<h2 class="card-title text-center" >Käthe Kobin</h2>
-					<div class="collapse" id="treener2">
+					<div class="collapse" id="treener1">
 					<div class="card card-body" id="tabp">
 					<p class="card-text">Tantsumeka juht ja tantsuõpetaja Matis Toome on tegelenud võistlustantsuga üle 25 aasta. 1995. aastal sooritas ta Eesti Tantsuõpetajate Liidus esimesed tantsuõpetaja eksamid ja alustas võistlemist Helen Klandorf-Sadamaga elukutselise võistluspaarina.Nende parimad saavutused on tantsuspordis EM 5. koht ja MM 9. koht. Tallinna Ülikoolis on ta lõpetanud baccalaureus artiumi koreograafia-tantsuõpetaja erialal ning kunstide magistriõppe koreograaf-lavastaja erialal. Matis Toome on ainus rahvusvahelise elukutselisi tantsijaid ja tantsuõpetajaid ühendava organisatsiooni (World Dance Council) tantsuõpetajate koolitaja ja eksaminaator Eestis. Eesti Olümpiakomitee poolt on talle väljastatud tähtajatu meistertreeneri kutsetunnistus. Samuti on ta Eesti Tantsuõpetajate Liidu president.</p>
 					</div>
