@@ -2,7 +2,7 @@
 <header id="topofpage">
 <nav class="navbar navbar-expand-lg navbar-light bg-logo fixed-top">
 <div class="container">
-	<a class="navbar-brand logo" href="http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/" target="_self" style="background-image:url(&quot;http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/img/tantsumeka.svg&quot;);" onclick="showHeaderText()"></a>
+	<a class="navbar-brand logo" href="http://greeny.cs.tlu.ee/~sevtrobe/Tantsumeka/Ryhm_4/main/" target="_self" style="background-image:url(&quot;http://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/img/tantsumeka.svg&quot;);" onclick="showHeaderText()"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -28,7 +28,7 @@
 			    <a class="nav-link" data-toggle="dropdown" href="#" style="color: #ffef8f;">VÕISTLUSTANTS</a>
 			    <div class="dropdown-menu">
 			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~sevtrobe/Tantsumeka/Ryhm_4/main/voistlustants/taiskasvanutele/" target="_self">Võistlusttants</a>
-			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~sevtrobe/Tantsumeka/Ryhm_4/voistlustants/kalender/" target="_self">Kalender</a>
+			      <a class="dropdown-item" href="http://greeny.cs.tlu.ee/~sevtrobe/Tantsumeka/Ryhm_4/main/voistlustants/kalender/" target="_self">Kalender</a>
 			    </div>
 			</li>
 			<li class="nav-item dropdown">
