@@ -6,6 +6,7 @@
 		$serverPassword = "if17";
 		$db = 'if17_Tantsumeka';
 		$connection = new mysqli($serverHost, $serverUsername, $serverPassword, $db);
+		mysqli_set_charset($connection,"utf8");
 		return $connection;
 	}
 	
