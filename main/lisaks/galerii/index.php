@@ -42,61 +42,31 @@
 <!-- header end -->
 
 
-<section id="algkursus">
-<div class="container-fluid col-lg-5 col-md-8 padding">
-<div class="row padding">
-	<div class="about-1 col-12">
-		<div class="col-12" id="tantsud">
-			<h2 class="text-center">Võistlustants</h2>
-		</div>
-		<p>Täiskasvanute standardtantsude treeningud 2017/18 hooajal toimuvad võistlevatele paaridele Haabersti Vene Gümnaasiumi aulas alates 14. augustist esmaspäeviti ja kolmapäeviti  18.15 - 19.45. 
-		<br>
-		<br>
-		NB! 9. augustil toimub ettevalmistav harjutustund.
-		<br>
-		Võimalus võtta eratunde!
-		<br>
-		Lisainfo: 5919 0800, info@tantsumeka.ee
-		</p>
-		<div class="col-12" id="tantsud">
-			<h2 class="text-center">Registreeri</h2>
-		</div>
-		<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST" class="needs-validation" novalidate>
-					<div class="form-group">
-						<input class="form-control" name="nimi" placeholder="Nimi" type="text" required>
-						<div class="invalid-feedback">Palun sisestage oma nimi.</div>
-					</div>
-					<div class="form-group">
-						<input class="form-control" name="_replyto" placeholder="Email" type="email" required>
-						<div class="invalid-feedback">Sisestage korrektne e-mail.</div>
-					</div>
-					<div class="form-group">
-						<textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Pärast registreerimist võtame Teiega ühendust." required></textarea>
-						<div class="invalid-feedback">Palun täitke</div>
-					</div>
-					<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
-					<input name="_subject" value="Registreerimine" type="hidden">
-					<input name="_format" value="plain" type="hidden">
-					<input name="_gotcha" style="display:none" type="text">
-					<div class="form-group">
-						<input class="btn btn-primary" value="Registreeri" type="submit">
-					</div>
-				</form>
-				<script>
-        			var form = document.querySelector('.needs-validation');
-        			form.addEventListener('submit', function(event) {
-            			if (form.checkValidity() === false) {
-               				event.preventDefault();
-                			event.stopPropagation();
-            			}
-            			form.classList.add('was-validated');
-        			})
-    			</script>
+<section  id="gallery">				
+	<div class="container-fluid padding d-none d-sm-block">
+        <div class="row padding">
+            <div class="col-xl-2 col-lg-2 col-md-1">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 about-1">
+				<br />
+                <h3 class="display-4 text-center">Galerii</h3>
+				<br />
+                <div>
+                    <script async src="https://www.publicalbum.org/js/pa-ins.min.js"></script>
+                        <ins class="pa-widget-gallery" style="width:100%;height:480px;"
+                            data-url="https://photos.google.com/share/AF1QipMnlk36KXQ6D4OjFedApi_tDvkdm7WZZPBXYanIawKlKh_EQ5ceZiLazZ9pw6uONg?key=TkJGcFotclZsTzZNdVRPMkx6RWNKZWhUci1yVllR"
+                            data-uid="ba079acfd0c1f45e73dd95c1bd16021f55eee0ce879762958184e263102275ad"
+                            data-delay="5">
+                        </ins>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-1">
+            </div>
+	    </div>
 	</div>
-</div>
-</div>	
 </section>
 
+</main>
 <!--- Footer -->
 <?php
 	require("../../footer.php");

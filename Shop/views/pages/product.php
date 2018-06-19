@@ -27,13 +27,17 @@
 			<div class="col-md-7">
 				<div>
 					<img id='i1' src="images/<?php echo $pics[0];?>"class="img-fluid large" /><br />
+					
 				</div>
 				<?php 
 				for ($i=0;$i<$pics_count;$i++)
 				{ ?>
 					<a href="#" onclick="document.getElementById('i1').src='images/<?php echo $pics[$i];?>'"><img src="images/<?php echo $pics[$i];?>" class = "img-fluid small" height="80"/></a>
 				<?php } ?>
+				<br><br>
+				<a><?php echo $product['description']?></a>
 			</div>
+			
 			<div class="col-md-5">
 				<p style="margin-bottom:1px;">Teie andmed:</p>
 				<input class="form-control" type="text" placeholder="Nimi" name="name" required>

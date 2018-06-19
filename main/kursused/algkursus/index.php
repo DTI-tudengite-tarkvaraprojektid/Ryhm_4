@@ -10,22 +10,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="https://greeny.cs.tlu.ee/~valevale/praktika/Ryhm_4/main/assets/css/style.css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../../favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../../favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<script>
-		function hideHeaderText() {
-    		var x = document.getElementById("tutvustus");
-    	     x.style.display = "none";
-			 $("#navbarResponsive").attr("class","navbar-collapse collapse")
-    	}
-
-		function showHeaderText() {
-    		var x = document.getElementById("tutvustus");
-    	     x.style.display = "block";
-    	}
 		function collapsePanels(){
 			jQuery('.collapse').collapse('hide');
 		}
-
-		
 	</script>
 </head>
 <body>
@@ -56,7 +61,7 @@ Maksumus paarile: 160 €<br>
 			</div>
 				<form action="https://formspree.io/robert.shev.spam@gmail.com" method="POST" class="needs-validation" novalidate>
 					<div class="form-group">
-						<input class="form-control" name="nimi" placeholder="Name" type="text" required>
+						<input class="form-control" name="nimi" placeholder="Nimi" type="text" required>
 						<div class="invalid-feedback">Palun sisestage oma nimi.</div>
 					</div>
 					<div class="form-group">
@@ -64,7 +69,7 @@ Maksumus paarile: 160 €<br>
 						<div class="invalid-feedback">Sisestage korrektne e-mail.</div>
 					</div>
 					<div class="form-group">
-						<textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Message" required></textarea>
+						<textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Kirjutage millisel algkursusel soovite osaleda. Pärast registreerimist võtame Teiega ühendust." required></textarea>
 						<div class="invalid-feedback">Palun täitke</div>
 					</div>
 					<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
@@ -72,7 +77,7 @@ Maksumus paarile: 160 €<br>
 					<input name="_format" value="plain" type="hidden">
 					<input name="_gotcha" style="display:none" type="text">
 					<div class="form-group">
-						<input class="btn btn-primary" value="Send" type="submit">
+						<input class="btn btn-primary" value="Registreeri" type="submit">
 					</div>
 				</form>
 				<script>
