@@ -41,7 +41,7 @@
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Võistlustants</h2>
 		</div>
-		<p>võistlustantsu info tuleb siia</p>
+		<p><?php echo $content[27];?></p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>
 		</div>

@@ -80,6 +80,7 @@
                                         <tbody>
                                             <?php
                                                 include('conn.php');
+                                                mysqli_set_charset($conn,'utf8');
                                                 $query=mysqli_query($conn,"select * from `WebContent`");
                                                 while($row=mysqli_fetch_array($query)){
                                                     ?>

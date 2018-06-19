@@ -1,3 +1,7 @@
+<?php
+	include('../../content.php');
+	
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,7 +45,7 @@
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Pulmatants</h2>
 		</div>
-		<p>pulmatantsu info tuleb siia</p>
+		<p><?php echo $content[25];?></p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>
 		</div>
