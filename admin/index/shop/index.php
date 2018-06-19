@@ -55,6 +55,9 @@
                 <li>
                     <a href="../users">Kasutajad</a>
                 </li>
+                <li >
+                    <a href="../teachers">Treenerid</a>
+                </li>
                 <li>
                     <a href="../content">Sisu</a>
                 </li>
@@ -125,9 +128,16 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-2 col-form-label" for="input-file">File input</label>
+                                            <label class="col-2 col-form-label" for="files">Pildit</label>
                                             <div class="col-10">
-                                                <input type="file" class="form-control-file" id="input-file" aria-describedby="fileHelp" name="file">
+                                                <input type="file" class="form-control-file" id="files" multiple aria-describedby="fileHelp" name="file[]">
+                                                <small id="fileHelp" class="form-text text-muted">Lubatud on jpg, jpeg ja png failid.</small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label" for="main-file">Peamine pilt</label>
+                                            <div class="col-10">
+                                                <input type="file" class="form-control-file" id="main-file" aria-describedby="fileHelp" name="mainFile">
                                                 <small id="fileHelp" class="form-text text-muted">Lubatud on jpg, jpeg ja png failid.</small>
                                             </div>
                                         </div>
