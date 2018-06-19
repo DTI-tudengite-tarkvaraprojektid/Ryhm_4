@@ -1,3 +1,6 @@
+<?php
+	include('../../content.php');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,41 +44,21 @@
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Hobiklubi</h2>
 		</div>
-		<p>HOBIKLUBI on tantsuharrastus nendele, kellele tants, muusika ja liikumine on saanud osaks elustiilist. Hobiklubi õhtutel tantsitakse ja veedetakse koos aega heas seltskonnas, õppides uusi huvitavaid tantsukombinatsioone.</p> 
+		<p><?php echo $content[17];?></p> 
 		<p>
-        2017/2018 hooajal toimuvad tunnid järgmiselt:<br>
+        <?php echo $content[18];?><br>
         <br>
-        HOBIKLUBI I teisipäeviti kl 18:30-20.00<br>
-        Rocca al Mare Kooli aulas (Vabaõhumuuseumi tee 8)<br>
-        SÜGIS 19.09.2017 - 12.12.2017<br>
-        TALV 09.01.2018 - 13.03.2018<br>
-        KEVAD 20.03.2018 - 15.05.2018<br>
-        Tasumine paarile 3. osamaksena:<br>
-        1. osa 185 € (sügis), 2. osa 160 € (talv), 3. osa 128 € (kevad)<br>
+		<?php echo $content[19];?>
         <br>
-        HOBIKLUBI II teisipäeviti kl 20:00-21:30<br>
-        Rocca al Mare Kooli aulas (Vabaõhumuuseumi tee 8)<br>
-        SÜGIS 19.09.2017 - 12.12.2017<br>
-        TALV 09.01.2017 - 13.03.2018<br>
-        KEVAD 20.03.2017 - 15.05.2018<br>
-        Tasumine paarile 3. osamaksena:<br>
-        1. osa 185 € (sügis), 2. osa 160 € (talv), 3. osa 128 € (kevad)<br>
-        <br>                    
-        HOBIKLUBI III kolmapäeviti kl 20.00-21.30<br>
-        Rocca al Mare Kooli aulas (Vabaõhumuusumi tee 8)<br>
-        SÜGIS 20.09.2017 - 13.12.2017<br>
-        TALV 10.01.2018 - 14.03.2018<br>
-        KEVAD 21.03.2018 - 16.05.2018<br>
-        Tasumine paarile 3. osamaksena:<br>
-        1. osa 185 € (sügis), 2. osa 160 € (talv), 3. osa 144 € (kevad)<br>
+		<br>
+        <?php echo $content[20];?>
+        <br>
+		<br>
+		<?php echo $content[21];?>         
+        <br>
         <br>                   
-        HOBIKLUBI IV kolmapäeviti kl 20.00-21.30<br>
-        Haabersti Vene Gümnaasiumi aulas (Õismäe tee 132)<br>
-        SÜGIS 13.09.2017 - 13.12.2017<br>
-        TALV 10.01.2018 - 14.03.2018<br>
-        KEVAD 21.03.2018 - 16.05.2018<br>
-        Tasumine paarile 3. osamaksena:<br>
-        1. osa 200 € (sügis), 2. osa 160 € (talv), 3. osa 144 € (kevad)<br>
+        <?php echo $content[22];?>  
+		<br>
         <br>
         </p>
 		<div class="col-12" id="tantsud">

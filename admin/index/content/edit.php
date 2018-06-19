@@ -1,6 +1,7 @@
 <?php
 	include('conn.php');
-	$id=$_GET['id'];
+    $id=$_GET['id'];
+    mysqli_set_charset($conn,'utf8');
 	$query=mysqli_query($conn,"select * from `WebContent` where postid='$id'");
     $row=mysqli_fetch_array($query);
     require("../functions.php");

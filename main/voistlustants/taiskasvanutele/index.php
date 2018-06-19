@@ -1,3 +1,7 @@
+<?php
+	include('../../content.php');
+	
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,14 +45,10 @@
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Võistlustants</h2>
 		</div>
-		<p>Täiskasvanute standardtantsude treeningud 2017/18 hooajal toimuvad võistlevatele paaridele Haabersti Vene Gümnaasiumi aulas alates 14. augustist esmaspäeviti ja kolmapäeviti  18.15 - 19.45. 
+		<p><?php echo $content[23];?> 
 		<br>
 		<br>
-		NB! 9. augustil toimub ettevalmistav harjutustund.
-		<br>
-		Võimalus võtta eratunde!
-		<br>
-		Lisainfo: 5919 0800, info@tantsumeka.ee
+		<?php echo $content[24];?>
 		</p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>

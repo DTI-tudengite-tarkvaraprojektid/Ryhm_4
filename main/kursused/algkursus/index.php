@@ -1,3 +1,7 @@
+<?php
+	include('../../content.php');
+	
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,12 +45,12 @@
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Algkursus</h2>
 		</div>
-		<p>Seltskonnatantsu ALGKURSUS on mõeldud neile, kel puudub tantsuoskus või, kes on tantsukursustel õpitust palju unustanud. Algkursustel taastate või omandate esmase hädavajaliku tantsuoskuse kaheksas tantsus: fokstrot, aeglane valss, valss, tango, samba, rumba, jive ja cha cha cha.</p> 
+		<p><?php echo $content[2];?></p> 
 		<p>
-ALGKURSUS KEVADEL esmaspäeviti kl 20:00-21:30<br>
-Rocca al Mare Koolis (Vabaõhumuuseumi tee 8)<br>
-26.03.2018 - 14.05.2018 (8 korda)<br>
-Maksumus paarile: 160 €<br>
+		<?php echo $content[3];?><br>
+		<?php echo $content[4];?><br>
+		<?php echo $content[5];?><br>
+		<?php echo $content[6];?><br>
 		</p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>

@@ -1,3 +1,7 @@
+<?php
+	include('../../content.php');
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +24,6 @@
 	<meta name="msapplication-config" content="../../favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffef8f">
 	<script>
-		
 		function collapsePanels(){
 			jQuery('.collapse').collapse('hide');
 		}
@@ -42,12 +45,12 @@
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Edasijõudnute kursus</h2>
 		</div>
-		<p>EDASIJÕUDNUTE KURSUS on veel üks võimalus jätkata tantsu õppimist. Need kursused on hoojapõhised ja kestavad sügisest kevadeni. Sealt edasi saab liikuda hobiklubisse.</p> 
+		<p><?php echo $content[12];?></p> 
 		<p>
-        EDASIJÕUDNUTE KURSUS KEVADEL neljapäeviti kl 20:00-21:30<br>
-        Haabersti Vene Gümnaasiumis (Õismäe tee 132)<br>
-        22.03.2018 - 17.05.2018 (9 korda)<br>
-        Maksumus paarile: 171 €<br>
+        <?php echo $content[13];?><br>
+        <?php echo $content[14];?><br>
+        <?php echo $content[15];?><br>
+        <?php echo $content[16];?><br>
 		</p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>

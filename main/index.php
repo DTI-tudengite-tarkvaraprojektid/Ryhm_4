@@ -1,3 +1,6 @@
+<?php
+	include('content.php');   
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,10 +72,10 @@
 <div class="container-fluid col-lg-10">
 <div class="row">
 	<div class="col-lg-6 about-1">
-		<p>Tantsumeka on loodud 2011. aastal ja välja kasvanud Ants Taela legendaarsest Taela Tantsukoolist, mis tegutses 1965-2011 Mustpeade Majas. Tantsumeka eesmärgiks on olla sõltumatu tantsukeskus Eestis ning teha tantsualast koostööd rahvusvahelisel tasemel. Tantsumeka on avatud kõikidele tantsuhuvilistele, nii algajatele, edasijõudnutele kui ka professionaalsetele tantsijatele, arendamaks oma tantsualaseid oskusi.</p>
+		<p><?php echo $content[0];?></p>
 	</div>
 	<div class="col-lg-6 about-1">
-		<p>Tantsumeka viib läbi täiskasvanute võistlustantsutreeninguid, seltskonnatantsu kursusi, samuti eratunde ja individuaalset nõustamist seltskonnatantsu algtasemest kuni võistlustantsu tipptasemeni. Tantsumeka tuumikuks on hobiklubi, kuhu on koondunud paarid, kes harrastavad tantsu juba aastaid. Tantsumeka tegutseb Tallinnas Rocca Al Mare Koolis ja Haabersti Vene Gümnaasiumis.</p>
+		<p><?php echo $content[1];?></p>
 	</div>
 </div>
 </div>

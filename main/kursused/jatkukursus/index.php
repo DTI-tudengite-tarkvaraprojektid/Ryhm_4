@@ -1,3 +1,7 @@
+<?php
+	include('../../content.php');
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,12 +45,12 @@
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Jätkukursus</h2>
 		</div>
-		<p>JÄTKUKURSUS on niiöelda algkursuse pikendus ja sobib neile, kes soovivad oma tantsuoskust lihvida ja mõned tantsusammud juurde õppida. Põhitantsud on samad. Lisaks õpime buggi.</p> 
+		<p><?php echo $content[7];?></p> 
 		<p>
-        JÄTKUKURSUS KEVADEL neljapäeviti kl 18:30-20:00<br>
-        Haabersti Vene Gümnaasiumis (Õismäe tee 132)<br>
-        22.03.2018 - 17.05.2018 (9 korda)<br>
-        Maksumus paarile: 180 €<br>
+        <?php echo $content[8];?><br>
+        <?php echo $content[9];?><br>
+        <?php echo $content[10];?><br>
+        <?php echo $content[11];?><br>
 		</p>
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Registreeri</h2>
