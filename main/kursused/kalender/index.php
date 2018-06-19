@@ -28,16 +28,6 @@
 	<meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<script>
-		function hideHeaderText() {
-    		var x = document.getElementById("tutvustus");
-    	     x.style.display = "none";
-			 $("#navbarResponsive").attr("class","navbar-collapse collapse")
-    	}
-
-		function showHeaderText() {
-    		var x = document.getElementById("tutvustus");
-    	     x.style.display = "block";
-    	}
 		function collapsePanels(){
 			jQuery('.collapse').collapse('hide');
 		}
@@ -58,7 +48,7 @@
 	<div class="col-xl-2 col-lg-2 col-md-1">
     </div>
 	<div class="col-xl-8 col-lg-8 col-md-10 about-1">
-		<h3 class="display-4 text-center">Kalender</h3>
+		<h2 class="text-center">Kalender</h2>
 		<div class="googleCalendar text-center">
               <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2kkmj0m33sbnkee7o90lmhttsk%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Australia%2FBrisbane" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
 		</div>

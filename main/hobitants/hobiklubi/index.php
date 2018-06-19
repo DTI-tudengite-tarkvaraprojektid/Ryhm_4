@@ -45,7 +45,7 @@
 <section id="hobiklubi">
 <div class="container-fluid col-lg-5 col-md-8 padding">
 <div class="row padding">
-	<div class="about-1">
+	<div class="about-1 col-12">
 		<div class="col-12" id="tantsud">
 			<h2 class="text-center">Hobiklubi</h2>
 		</div>
