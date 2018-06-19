@@ -1,0 +1,1 @@
+<META http-equiv="refresh" content="0;URL=http://greeny.cs.tlu.ee/~sevtrobe/Tantsumeka/Ryhm_4/main/">
