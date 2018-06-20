@@ -42,9 +42,12 @@ Admini kasutajaliides
   <li>Bootsrtrap 4.1</li>
 </ul>
 
-<h2>Andmebaasi juhised</h2>
-Vajalikud failid asuvad sql kaustas.
-https://github.com/RobertShev/Ryhm_4/tree/master/sql
+<h2>Paigalduse juhised</h2>
+1. Installida valitud severile PHP 5.7
+2. Installida valitud severile SQL
+3. Lisada SQL käsud sättestatud serverisse. (Vajalikud failid asuvad sql kaustas https://github.com/RobertShev/Ryhm_4/tree/master/sql
+4.Lubada kirjutamis uploads kaustadele (admin/index/shop/uploads ja admin/index/users/uploads)
+5.linkida input formidele vajaliku meili ja kinnitada seda test maili saatmisel. inputid asuvad main/index ja alla seda kausta olevates indexites.
 
 <h2>License</h2>
 The MIT License (MIT)
