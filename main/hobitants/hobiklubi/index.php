@@ -77,8 +77,8 @@
 						<textarea class="form-control" rows="14" name="sõnum" type="text" placeholder="Kirjutage millises hobiklubi rühmas soovite osaleda. Pärast registreerimist võtame Teiega ühendust." required></textarea>
 						<div class="invalid-feedback">Palun täitke</div>
 					</div>
-						<input name="_next" value="http://www.tlu.ee/~shev/eesrakenduse/sayings-offline-app/" type="hidden">
-						<input name="_subject" value="Registreerimine" type="hidden">
+						<input name="_next" value="http://greeny.cs.tlu.ee/~sevtrobe/Tantsumeka/Ryhm_4/main/hobitants/hobiklubi/" type="hidden">
+						<input name="_subject" value="Registreerimine Hobiklubi" type="hidden">
 						<input name="_format" value="plain" type="hidden">
 						<input name="_gotcha" style="display:none" type="text">
 					<div class="form-group">

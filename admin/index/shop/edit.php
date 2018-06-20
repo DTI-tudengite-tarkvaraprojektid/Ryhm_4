@@ -1,6 +1,6 @@
 <?php
 	include('conn.php');
-	$id=$_GET['id'];
+    $id=$_GET['id'];
 	$query=mysqli_query($conn,"select * from `products` where id='$id'");
     $row=mysqli_fetch_array($query);
     require("../functions.php");
@@ -58,6 +58,12 @@
                     </li>
                     <li>
                         <a href="">Kasutajad</a>
+                    </li>
+                    <li >
+                        <a href="../teachers">Treenerid</a>
+                    </li>
+                    <li>
+                        <a href="../content">Sisu</a>
                     </li>
                     <li>
                         <a href="?logout=1">Logi välja</a>

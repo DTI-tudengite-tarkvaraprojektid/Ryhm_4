@@ -9,5 +9,5 @@
         $contentStorage .= $row['content']."无";
     }
     $content = explode("无", $contentStorage);
-    //25 <?php echo $content[25];?>
+    //25 <?php echo $content[25];
 ?>

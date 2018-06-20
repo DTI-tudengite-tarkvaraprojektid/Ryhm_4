@@ -44,7 +44,7 @@
                     </li>
                     <br>
                     <li>
-                        <a href="#">Pood</a>
+                        <a href="../shop">Pood</a>
                     </li>
                     <li>
                         <a href="../calendar">Kalender</a>

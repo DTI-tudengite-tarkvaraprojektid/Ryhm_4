@@ -61,6 +61,9 @@
                     <li>
                         <a href="../users">Kasutajad</a>
                     </li>
+                    <li >
+                        <a href="../teachers">Treenerid</a>
+                    </li>
                     <li  class="visited">
                         <a href="">Sisu</a>
                     </li>

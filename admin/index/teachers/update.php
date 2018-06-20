@@ -1,7 +1,7 @@
 <?php
 	include('conn.php');
 	$id=$_GET['id'];
- 
+	
 	$name=$_POST['name'];
 	$info=$_POST['info'];
  

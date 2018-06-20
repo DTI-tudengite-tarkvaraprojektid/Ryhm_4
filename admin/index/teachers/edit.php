@@ -1,5 +1,5 @@
 <?php
-	include('conn.php');
+    include('conn.php');
 	$id=$_GET['id'];
 	$query=mysqli_query($conn,"select * from `trainers` where id='$id'");
     $row=mysqli_fetch_array($query);

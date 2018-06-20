@@ -1,6 +1,3 @@
-<?php
-	include('content.php');   
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -44,6 +41,7 @@
 
 <?php
 	require("header.php");
+	include('content.php');
 ?>
 
 <section id="tutvustus">
