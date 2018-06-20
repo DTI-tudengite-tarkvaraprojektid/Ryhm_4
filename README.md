@@ -43,11 +43,13 @@ Admini kasutajaliides
 </ul>
 
 <h2>Paigalduse juhised</h2>
-1. Installida valitud severile PHP 5.7
-2. Installida valitud severile SQL
-3. Lisada SQL käsud sättestatud serverisse. (Vajalikud failid asuvad sql kaustas https://github.com/RobertShev/Ryhm_4/tree/master/sql
-4.Lubada kirjutamis uploads kaustadele (admin/index/shop/uploads ja admin/index/users/uploads)
-5.linkida input formidele vajaliku meili ja kinnitada seda test maili saatmisel. inputid asuvad main/index ja alla seda kausta olevates indexites.
+<ol>
+  <li>Installida valitud severile PHP 5.7</li>
+  <li>Installida valitud severile SQL</li>
+  <li>Lisada SQL käsud sättestatud serverisse. (Vajalikud failid asuvad sql kaustas https://github.com/RobertShev/Ryhm_4/tree/master/sql</li>
+  <li>Lubada kirjutamis uploads kaustadele (admin/index/shop/uploads ja admin/index/users/uploads)</li>
+  <li>linkida input formidele vajaliku meili ja kinnitada seda test maili saatmisel. inputid asuvad main/index ja alla seda kausta olevates indexites.</li>
+</ol>
 
 <h2>License</h2>
 The MIT License (MIT)
