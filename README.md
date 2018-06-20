@@ -48,7 +48,7 @@ Admini kasutajaliides
   <li>Installida valitud severile SQL</li>
   <li>Lisada SQL käsud sättestatud serverisse. (Vajalikud failid asuvad sql kaustas https://github.com/RobertShev/Ryhm_4/tree/master/sql</li>
   <li>Lubada kirjutamis uploads kaustadele (admin/index/shop/uploads ja admin/index/users/uploads)</li>
-  <li>linkida input formidele vajaliku meili ja kinnitada seda test maili saatmisel. inputid asuvad main/index ja alla seda kausta olevates indexites.</li>
+  <li>Linkida input formidele vajaliku meili ja kinnitada seda test maili saatmisel. inputid asuvad main/index ja alla seda kausta olevates indexites.</li>
 </ol>
 
 <h2>License</h2>
