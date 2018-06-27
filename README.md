@@ -49,6 +49,8 @@ Admini kasutajaliides
   <li>Lisada SQL käsud sättestatud serverisse. (Vajalikud failid asuvad sql kaustas https://github.com/RobertShev/Ryhm_4/tree/master/sql</li>
   <li>Lubada kirjutamis uploads kaustadele (admin/index/shop/uploads ja admin/index/users/uploads)</li>
   <li>Linkida input formidele vajaliku meili ja kinnitada seda test maili saatmisel. inputid asuvad main/index ja alla seda kausta olevates indexites.</li>
+  <li>Lisada ruut kausta config.php fail</li>
+  <li>config.php sees tekkitada muutujaid $serverHost ; $serverUsername; $serverPassword; $database</li>
 </ol>
 
 <h2>License</h2>

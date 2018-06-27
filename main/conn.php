@@ -1,8 +1,6 @@
 <?php
-  $serverHost = "localhost";
-  $serverUsername = "if17";
-  $serverPassword = "if17";
-  $database = "if17_Tantsumeka";
+  require("../config.php");
+
   $conn = mysqli_connect($serverHost,$serverUsername,$serverPassword,$database);
  
   // Check connection
