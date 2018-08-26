@@ -14,7 +14,7 @@ Koduleht ilma videota
 
 Admini kasutajaliides
 
-<h2>Meeskonna liiged</h2>
+<h2>Meeskonna liikmed</h2>
 <ul>
   <li>Konstantin Blinkov – Testija</li>
   <li>Robert Ševtšenko – Vormistaja/dokumenteerija ja Juht</li>
@@ -22,7 +22,7 @@ Admini kasutajaliides
   <li>Valeri Valentinov – Esitleja/kliendiga suhtleja ja Kujundaja</li>
 </ul>
 
-<h2>Eesmägid</h2>
+<h2>Eesmärgid</h2>
 <ul>
   <li>Aktuaalne disain</li>
   <li>Kasutada brändi värve</li>
